@@ -12,6 +12,11 @@ vendor.bluetooth.soc=cherokee
 sys.camera.packagename.zui=1
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.zui.camera,org.lineageos.snap,com.android.camera
 vendor.camera.packagename.zui=1
+# Enable camera EIS
+# eis.enable: enables electronic image stabilization
+# is_type: sets image stabilization type
+persist.camera.eis.enable=1
+persist.camera.is_type=4
 
 # CNE and DPM
 persist.vendor.cne.feature=1
