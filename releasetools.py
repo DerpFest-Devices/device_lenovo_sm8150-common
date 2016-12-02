@@ -1,4 +1,5 @@
 # Copyright (C) 2009 The Android Open Source Project
+# Copyright (c) 2011, The Linux Foundation. All rights reserved.
 # Copyright (C) 2019 The Mokee Open Source Project
 # Copyright (C) 2019 The LineageOS Open Source Project
 #
@@ -14,16 +15,34 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import hashlib
 import common
 import re
+
+def FullOTA_Assertions(info):
+  AddTrustZoneAssertion(info, info.input_zip)
+  return
 
 def FullOTA_InstallEnd(info):
   OTA_InstallEnd(info)
   return
 
+def IncrementalOTA_Assertions(info):
+  AddTrustZoneAssertion(info, info.target_zip)
+  return
+
 def IncrementalOTA_InstallEnd(info):
   OTA_InstallEnd(info)
   return
+
+def AddTrustZoneAssertion(info, input_zip):
+  android_info = info.input_zip.read("OTA/android-info.txt")
+  m = re.search(r'require\s+version-trustzone\s*=\s*(\S+)', android_info)
+  if m:
+    versions = m.group(1).split('|')
+    if len(versions) and '*' not in versions:
+      cmd = 'assert(lenovo.verify_trustzone(' + ','.join(['"%s"' % tz for tz in versions]) + ') == "1");'
+      info.script.AppendExtra(cmd)
 
 def AddImage(info, basename, dest):
   name = basename

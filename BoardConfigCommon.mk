@@ -162,6 +162,7 @@ ifeq ($(BOARD_KERNEL_SEPARATED_DTBO),true)
 endif
 
 # Releasetools
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_lenovo
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH_COMMON)
 
 # RIL
