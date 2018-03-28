@@ -53,6 +53,9 @@ ro.vendor.qti.sys.fw.bservice_enable=true
 # Netflix
 ro.netflix.bsp_rev=Q855-16947-1
 
+# OEM Unlock reporting
+ro.oem_unlock_supported=1
+
 # RIL
 DEVICE_PROVISIONED=1
 persist.dbg.ims_volte_enable=1
