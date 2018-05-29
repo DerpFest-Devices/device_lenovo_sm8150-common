@@ -37,11 +37,11 @@ def IncrementalOTA_InstallEnd(info):
 
 def AddModemAssertion(info, input_zip):
   android_info = info.input_zip.read("OTA/android-info.txt")
-  m = re.search(r'require\s+version-modem\s*=\s*(\S+)', android_info)
+  m = re.search(r'require\s+version-modem\s*=\s*(.+)', android_info)
   if m:
-    versions = m.group(1).split('|')
-    if len(versions) and '*' not in versions:
-      cmd = 'assert(lenovo.verify_modem(' + ','.join(['"%s"' % modem for modem in versions]) + ') == "1");'
+    version = m.group(1).rstrip()
+    if len(version) and '*' not in version:
+      cmd = 'assert(lenovo.verify_modem("' + version + '") == "1");'
       info.script.AppendExtra(cmd)
 
 def AddImage(info, basename, dest):
