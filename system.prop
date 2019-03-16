@@ -44,6 +44,8 @@ persist.backup.ntpServer=0.pool.ntp.org
 
 # Graphics
 ro.surface_flinger.supports_background_blur=1
+debug.cpurend.vsync=false
+
 
 # IOP
 vendor.iop.enable_prefetch_ofr=0
