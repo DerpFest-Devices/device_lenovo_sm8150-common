@@ -331,6 +331,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
 
+# NotchBarKiller
+PRODUCT_PACKAGES += \
+    NotchBarKiller
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.lenovo_msmnile-libperfmgr
