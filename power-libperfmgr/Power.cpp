@@ -17,6 +17,8 @@
 #define ATRACE_TAG (ATRACE_TAG_POWER | ATRACE_TAG_HAL)
 #define LOG_TAG "android.hardware.power@1.3-service.lenovo_msmnile-libperfmgr"
 
+#define TAP_TO_WAKE_NODE "/sys/devices/virtual/touch/tp_dev/gesture_on"
+
 #include <android-base/file.h>
 #include <android-base/logging.h>
 #include <android-base/properties.h>
@@ -179,8 +181,16 @@ Return<void> Power::powerHint(PowerHint_1_0 hint, int32_t data) {
     return Void();
 }
 
-Return<void> Power::setFeature(Feature /*feature*/, bool /*activate*/) {
-    // Nothing to do
+Return<void> Power::setFeature(Feature feature, bool activate) {
+    switch (feature) {
+#ifdef TAP_TO_WAKE_NODE
+        case Feature::POWER_FEATURE_DOUBLE_TAP_TO_WAKE:
+            ::android::base::WriteStringToFile(activate ? "1" : "0", TAP_TO_WAKE_NODE);
+            break;
+#endif
+        default:
+            break;
+    }
     return Void();
 }
 
