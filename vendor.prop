@@ -109,6 +109,9 @@ ro.surface_flinger.has_wide_color_display=true
 # Keystore
 ro.hardware.keystore_desede=true
 
+# LMKD
+ro.config.low_ram=false
+
 # Media
 debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank.sw-audio=1
