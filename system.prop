@@ -24,6 +24,9 @@ persist.data.iwlan=1
 persist.vendor.data.mode=concurrent
 ro.vendor.use_data_netmgrd=true
 
+# Dex2oat
+dalvik.vm.dex2oat64.enabled=true
+
 # Display
 persist.displayfeature.dc_backlight.enable=false
 persist.displayfeature.dc_backlight.threshold=610
