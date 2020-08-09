@@ -173,9 +173,6 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH_COMMON)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH_COMMON)/sepolicy/public
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH_COMMON)/sepolicy/vendor
 
-# Power
-TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/touch/tp_dev/gesture_on"
-
 # Verified Boot
 BOARD_AVB_ENABLE := true
 ifeq ($(BOARD_AVB_ENABLE), true)
