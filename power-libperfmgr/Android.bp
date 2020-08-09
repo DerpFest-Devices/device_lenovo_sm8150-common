@@ -20,10 +20,10 @@ cc_library_headers {
 }
 
 cc_binary {
-    name: "android.hardware.power@1.3-service.pixel-libperfmgr",
+    name: "android.hardware.power@1.3-service.lenovo_msmnile-libperfmgr",
     relative_install_path: "hw",
-    vintf_fragments: ["android.hardware.power@1.3-service.pixel.xml"],
-    init_rc: ["android.hardware.power@1.3-service.pixel-libperfmgr.rc"],
+    vintf_fragments: ["android.hardware.power@1.3-service.lenovo_msmnile.xml"],
+    init_rc: ["android.hardware.power@1.3-service.lenovo_msmnile-libperfmgr.rc"],
     srcs: ["service.cpp", "Power.cpp", "InteractionHandler.cpp",
             "display-helper.cpp"],
     cflags: [
