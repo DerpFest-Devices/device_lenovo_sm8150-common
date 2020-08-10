@@ -18,6 +18,27 @@ on init
     # configure governor settings for big big CPU
     write /sys/devices/system/cpu/cpu7/cpufreq/scaling_governor schedutil
 
+    # set default schedTune value for foreground/top-app
+    write /dev/stune/foreground/schedtune.prefer_idle 1
+    write /dev/stune/top-app/schedtune.boost 10
+    write /dev/stune/top-app/schedtune.prefer_idle 1
+
+    # create a cpuset for camera-specific processes
+    mkdir /dev/cpuset/camera-daemon
+    write /dev/cpuset/camera-daemon/cpus 0-7
+    write /dev/cpuset/camera-daemon/mems 0
+    chown system system /dev/cpuset/camera-daemon
+    chown system system /dev/cpuset/camera-daemon/tasks
+    chmod 0664 /dev/cpuset/camera-daemon/tasks
+
+    # create an stune group for camera-specific processes
+    mkdir /dev/stune/camera-daemon
+    write /dev/stune/camera-daemon/schedtune.prefer_idle 1
+    write /dev/stune/camera-daemon/schedtune.boost 0
+    chown system system /dev/stune/camera-daemon
+    chown system system /dev/stune/camera-daemon/tasks
+    chmod 0664 /dev/stune/camera-daemon/tasks
+
 on property:sys.boot_completed=1
     # Enable powersaving
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
@@ -29,4 +50,18 @@ on property:sys.boot_completed=1
     write /sys/kernel/debug/sched_features ENERGY_AWARE
 
     #Enable PowerHAL hint processing
-    setprop vendor.powerhal.init 1 
+    setprop vendor.powerhal.init 1
+
+    # Setup runtime cpusets
+    write /dev/cpuset/top-app/cpus 0-7
+    write /dev/cpuset/foreground/cpus 0-3,5-6
+    write /dev/cpuset/background/cpus 0-1
+    write /dev/cpuset/system-background/cpus 0-3
+    write /dev/cpuset/restricted/cpus 0-3
+
+    # Setup runtime blkio
+    # value for group_idle is us
+    write /dev/blkio/blkio.weight 1000
+    write /dev/blkio/background/blkio.weight 200
+    write /dev/blkio/blkio.group_idle 2000
+    write /dev/blkio/background/blkio.group_idle 0
