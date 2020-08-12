@@ -136,6 +136,7 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
     libdng_sdk \
     libgui_vendor \
+    libqti-perfd-client \
     libxml2 \
     Snap
 
