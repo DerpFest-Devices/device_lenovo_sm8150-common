@@ -209,6 +209,7 @@ PRODUCT_PACKAGES += \
     memtrack.msmnile \
     vendor.display.config@2.0.vendor \
     vendor.qti.hardware.display.allocator-service \
+    vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor
 
