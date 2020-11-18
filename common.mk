@@ -382,7 +382,8 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    libsensorndkbridge
+    libsensorndkbridge \
+    vendor.qti.hardware.display.mapper@1.1.vendor
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
