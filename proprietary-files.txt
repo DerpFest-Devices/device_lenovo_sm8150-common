@@ -698,7 +698,6 @@ vendor/lib64/unnhal-acc-hvx.so|3c8f0043ef20d9555dfb6da2578043c0b3923a6f
 # Perf
 vendor/bin/msm_irqbalance
 vendor/lib64/libqti-perfd-client.so
-vendor/lib64/vendor.qti.hardware.perf@2.0.so
 
 # Peripheral manager
 vendor/bin/pm-proxy
