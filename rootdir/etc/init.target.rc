@@ -78,6 +78,29 @@ on boot
     chown system system /sys/kernel/qvr_external_sensor/fd
     start rmt_storage
     start rfs_access
+    write /dev/cpuset/top-app/cpus 0-3
+    write /dev/cpuset/audio-app/cpus 1-2
+    write /dev/cpuset/foreground/cpus 0-3
+    write /dev/cpuset/foreground/boost/cpus 0-3
+    write /dev/cpuset/background/cpus 0-3
+    write /dev/cpuset/system-background/cpus 0-3
+    write /dev/cpuset/top-app/cpus 0-7
+    write /dev/cpuset/foreground/cpus 0-7
+    write /dev/cpuset/foreground/boost/cpus 0-7
+    write /dev/cpuset/background/cpus 0-7
+    write /dev/cpuset/system-background/cpus 0-7
+
+#Load WLAN driver
+    insmod /vendor/lib/modules/qca_cld3_wlan.ko
+
+# Add a cpuset for the camera daemon
+# We want all cores for camera
+    mkdir /dev/cpuset/camera-daemon
+    write /dev/cpuset/camera-daemon/cpus 0-7
+    write /dev/cpuset/camera-daemon/mems 0
+    chown cameraserver cameraserver /dev/cpuset/camera-daemon
+    chown cameraserver cameraserver /dev/cpuset/camera-daemon/tasks
+    chmod 0660 /dev/cpuset/camera-daemon/tasks
 
 #USB controller configuration
     setprop vendor.usb.rndis.func.name "gsi"
@@ -100,9 +123,6 @@ on property:vendor.display.lcd_density=640
 
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
-
-#Load WLAN driver
-    insmod /vendor/lib/modules/qca_cld3_wlan.ko
 
 #pd-mapper
 service vendor.pd_mapper /vendor/bin/pd-mapper
