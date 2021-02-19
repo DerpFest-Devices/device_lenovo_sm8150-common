@@ -40,6 +40,30 @@ on init
     chmod 0664 /dev/stune/camera-daemon/tasks
 
 on property:sys.boot_completed=1
+    # UClamp tuning
+    write /proc/sys/kernel/sched_util_clamp_min_rt_default 96
+    write /proc/sys/kernel/sched_util_clamp_min 128
+
+    write /dev/cpuset/top-app/uclamp.max max
+    write /dev/cpuset/top-app/uclamp.min 10
+    write /dev/cpuset/top-app/uclamp.boosted 1
+    write /dev/cpuset/top-app/uclamp.latency_sensitive 1
+
+    write /dev/cpuset/foreground/uclamp.max 50
+    write /dev/cpuset/foreground/uclamp.min 0
+    write /dev/cpuset/foreground/uclamp.boosted 0
+    write /dev/cpuset/foreground/uclamp.latency_sensitive 0
+
+    write /dev/cpuset/background/uclamp.max max
+    write /dev/cpuset/background/uclamp.min 20
+    write /dev/cpuset/background/uclamp.boosted 0
+    write /dev/cpuset/background/uclamp.latency_sensitive 0
+
+    write /dev/cpuset/system-background/uclamp.max 40
+    write /dev/cpuset/system-background/uclamp.min 0
+    write /dev/cpuset/system-background/uclamp.boosted 0
+    write /dev/cpuset/system-background/uclamp.latency_sensitive 0
+
     # Enable powersaving
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
 
