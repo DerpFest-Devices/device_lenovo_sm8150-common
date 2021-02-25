@@ -10,9 +10,11 @@ on post-fs
     chown audioserver audio  /sys/bus/i2c/devices/2-0034/rw
 
 on init
-#added touch gesture wake node permission
-    chown system /sys/devices/virtual/touch/tp_dev/gesture_on
-    chown system /sys/devices/virtual/touch/tp_dev/touch_key
+    # permission for dt2w
+    chown system system /sys/devices/virtual/touch/tp_dev/gesture_on
+    chmod 0660 /sys/devices/virtual/touch/tp_dev/gesture_on
+    chown system system /sys/devices/virtual/touch/tp_dev/touch_key
+    chmod 0660 /sys/devices/virtual/touch/tp_dev/touch_key
 
 # Add factest service
 service factest /vendor/bin/factest
