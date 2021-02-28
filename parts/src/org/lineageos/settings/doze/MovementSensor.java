@@ -46,7 +46,7 @@ public class MovementSensor implements SensorEventListener {
     public MovementSensor(Context context) {
         mContext = context;
         mSensorManager = mContext.getSystemService(SensorManager.class);
-        mSensor = DozeUtils.getSensor(mSensorManager, "com.lenovo.sensor.movement");
+        mSensor = DozeUtils.getSensor(mSensorManager, "qti.sensor.amd");
         mExecutorService = Executors.newSingleThreadExecutor();
     }
 
