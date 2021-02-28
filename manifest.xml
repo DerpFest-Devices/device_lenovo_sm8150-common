@@ -208,6 +208,7 @@
             <name>ISecureElement</name>
             <instance>SIM1</instance>
             <instance>SIM2</instance>
+            <instance>eSE1</instance>
         </interface>
         <fqname>@1.0::ISecureElement/SIM1</fqname>
         <fqname>@1.0::ISecureElement/SIM2</fqname>
@@ -298,7 +299,12 @@
             <name>IGoodixFingerprintDaemon</name>
             <instance>default</instance>
         </interface>
+        <interface>
+            <name>IGoodixFingerprintDaemonExt</name>
+            <instance>default</instance>
+        </interface>
         <fqname>@2.1::IGoodixFingerprintDaemon/default</fqname>
+        <fqname>@2.1::IGoodixFingerprintDaemonExt/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.lineage.livedisplay</name>

@@ -1,0 +1,7 @@
+package vendor.zui.hardware.ifaa@1.0;
+
+import vendor.zui.hardware.ifaa@1.0::IIFAADeviceCallback;
+
+interface IIFAADevice {
+    processCmd (vec<int8_t> input, IIFAADeviceCallback Callback) generates (int32_t debugErrno);
+};

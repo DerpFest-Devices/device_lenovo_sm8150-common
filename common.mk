@@ -237,6 +237,13 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
+# IFAA Manager
+PRODUCT_PACKAGES += \
+    org.ifaa.android.manager
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/org.ifaa.android.manager/etc/permissions/org.ifaa.android.manager.permissions.xml:/$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.ifaa.android.manager.permissions.xml
+
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \

@@ -535,6 +535,11 @@ vendor/lib64/libhbtpfrmwk.so
 # Input
 system/etc/excluded-input-devices.xml
 
+# IFAA
+vendor/bin/hw/vendor.zui.hardware.ifaa@1.0-service
+vendor/etc/init/vendor.zui.hardware.ifaa@1.0-service.rc
+vendor/lib64/vendor.zui.hardware.ifaa@1.0.so
+
 # IPA Firmware
 vendor/firmware/ipa_fws.b00
 vendor/firmware/ipa_fws.b01

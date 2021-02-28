@@ -1,0 +1,5 @@
+package vendor.zui.hardware.ifaa@1.0;
+
+interface IIFAADeviceCallback {
+    oneway processCmdCallback (int32_t error, vec<int8_t> output);
+};
