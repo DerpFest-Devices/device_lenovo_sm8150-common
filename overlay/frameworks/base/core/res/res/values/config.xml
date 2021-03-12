@@ -40,7 +40,7 @@
          autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">true</bool>
 
-    <bool name="config_supportSystemNavigationKeys">true</bool>
+    <bool name="config_supportSystemNavigationKeys">false</bool>
 
     <!-- Boolean indicating if restoring network selection should be skipped -->
     <!-- The restoring is handled by modem if it is true-->
