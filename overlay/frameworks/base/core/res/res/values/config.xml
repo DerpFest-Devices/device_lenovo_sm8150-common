@@ -757,5 +757,9 @@
     <!-- SystemInfo Sys Nodes -->
     <integer name="config_sysCPUTempMultiplier">1000</integer>
     <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone0/temp</string>
+
+    <!-- Hide FOD while Going to sleep from lockscreen to avoid HBM flicker
+         or FOD Circle hiding after the screen is put to sleep -->
+    <bool name="config_hideFodCircleGoingToSleep">true</bool>
 </resources>
 
