@@ -1036,16 +1036,6 @@ vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto|f35ad5c8ade4f36caa9a71dff2
 vendor/etc/sensors/proto/sns_zuk_patpat.proto|7fc9fa85260216c213556bf1555914a5a4968114
 vendor/etc/sensors/proto/sns_zuk_pickup.proto|f7217f9c7dac02fca8d07b8057964756b7d766e9
 
-# Sensors HAL
-system/lib/android.hardware.sensors@1.0.so
-system/lib/android.hardware.sensors@2.0.so
-system/lib64/android.hardware.sensors@1.0.so
-system/lib64/android.hardware.sensors@2.0.so
-vendor/bin/hw/android.hardware.sensors@2.0-service
-vendor/etc/init/android.hardware.sensors@2.0-service.rc
-vendor/lib/android.hardware.sensors@2.0-impl.so
-vendor/lib64/android.hardware.sensors@2.0-impl.so
-
 # Snapdragon Computer Vision Engine - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
 vendor/lib/libfastcvdsp_stub.so|6ccfd797a035075db44aaf288a87d1eb041288b7
 -vendor/lib/libfastcvopt.so|b8ab7d9eaf6fc945463d738c15ffde7edf025045
