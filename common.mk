@@ -344,7 +344,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.2 \
     android.hardware.radio.config@1.0 \
-    android.hardware.secure_element@1.0 \
     libprotobuf-cpp-full \
     libril \
     librilutils \
@@ -353,7 +352,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite-vendorcompat \
-    libprotobuf-cpp-full-vendorcompat \
+    libprotobuf-cpp-full-vendorcompat
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
