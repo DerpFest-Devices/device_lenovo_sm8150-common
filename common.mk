@@ -127,6 +127,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
+# DebugFS
+PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
+
 # Device-specific settings
 PRODUCT_PACKAGES += \
     LenovoParts
