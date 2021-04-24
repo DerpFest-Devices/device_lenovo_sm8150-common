@@ -36,13 +36,11 @@
         <!-- Device Settings -->
         <activity
             android:name=".DeviceSettingsActivity"
-            android:label="@string/device_title">
+            android:label="@string/device_title"
+            android:theme="@style/Theme.Main">
             <intent-filter>
                 <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
             </intent-filter>
-            <meta-data
-                android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_settings_device" />
             <meta-data
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.display" />
