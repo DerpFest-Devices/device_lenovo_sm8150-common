@@ -23,7 +23,7 @@
 namespace vendor {
 namespace lineage {
 namespace livedisplay {
-namespace V2_1 {
+namespace V2_0 {
 namespace implementation {
 
 static constexpr const char* kDcDimmingPath =
@@ -45,7 +45,7 @@ Return<bool> AntiFlicker::setEnabled(bool enabled) {
 }
 
 }  // namespace implementation
-}  // namespace V2_1
+}  // namespace V2_0
 }  // namespace livedisplay
 }  // namespace lineage
 }  // namespace vendor

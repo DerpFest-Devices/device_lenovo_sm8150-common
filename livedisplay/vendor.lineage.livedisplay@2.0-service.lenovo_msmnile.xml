@@ -2,7 +2,7 @@
     <hal format="hidl">
         <name>vendor.lineage.livedisplay</name>
         <transport>hwbinder</transport>
-        <version>2.1</version>
+        <version>2.0</version>
         <interface>
             <name>IAntiFlicker</name>
             <instance>default</instance>
@@ -19,6 +19,5 @@
             <name>ISunlightEnhancement</name>
             <instance>default</instance>
         </interface>
-        <fqname>@2.0::IPictureAdjustment/default</fqname>
     </hal>
 </manifest>
