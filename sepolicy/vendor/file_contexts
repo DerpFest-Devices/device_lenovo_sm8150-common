@@ -21,3 +21,9 @@
 
 # Touch
 /sys/devices/virtual/touch/tp_dev/gesture_on                                                                            u:object_r:sysfs_tp:s0
+
+# Device Info
+/sys/class/thermal/thermal_zone0/temp          u:object_r:sysfs_device_info:s0
+/sys/class/power_supply/battery/temp           u:object_r:sysfs_device_info:s0
+/sys/kernel/gpu/gpu_clock                      u:object_r:sysfs_device_info:s0
+/sys/kernel/gpu/gpu_busy                       u:object_r:sysfs_device_info:s0
