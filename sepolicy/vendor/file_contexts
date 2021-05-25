@@ -15,5 +15,9 @@
 # Sys files
 /sys/module/stmvl53l1(/.*)?                                                                                             u:object_r:sysfs_vl53l1:s0
 
+# System
+/system/camera(/.*)?                                                                                                    u:object_r:system_camera_file:s0
+/system/etc/camera(/.*)?                                                                                                u:object_r:system_camera_file:s0
+
 # Touch
 /sys/devices/virtual/touch/tp_dev/gesture_on                                                                            u:object_r:sysfs_tp:s0

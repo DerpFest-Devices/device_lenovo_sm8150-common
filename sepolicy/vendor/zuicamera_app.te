@@ -1,0 +1,22 @@
+type zuicamera_app, domain;
+typeattribute zuicamera_app coredomain;
+app_domain(zuicamera_app);
+
+allow zuicamera_app app_api_service:service_manager find;
+allow zuicamera_app audioserver_service:service_manager find;
+allow zuicamera_app cameraserver_service:service_manager find;
+allow zuicamera_app drmserver_service:service_manager find;
+allow zuicamera_app mediaextractor_service:service_manager find;
+allow zuicamera_app mediametrics_service:service_manager find;
+allow zuicamera_app mediaserver_service:service_manager find;
+allow zuicamera_app radio_service:service_manager find;
+
+binder_call(zuicamera_app, gpuservice)
+
+allow zuicamera_app app_data_file:dir r_dir_perms;
+allow zuicamera_app app_data_file:file rwx_file_perms;
+allow zuicamera_app rs_exec:file rx_file_perms;
+allow zuicamera_app vendor_camera_data_file:dir create_dir_perms;
+allow zuicamera_app vendor_camera_data_file:file create_file_perms;
+allow zuicamera_app system_camera_file:dir r_dir_perms;
+allow zuicamera_app system_camera_file:file r_file_perms;
