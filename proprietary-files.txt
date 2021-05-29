@@ -717,6 +717,9 @@ vendor/lib64/unnhal-acc-common.so|79fd66d6a86395b95f64423f968c3d4126630477
 vendor/lib64/unnhal-acc-hta.so|2c19cdff7531b8850dac8a305b6d940129d2e85d
 vendor/lib64/unnhal-acc-hvx.so|3c8f0043ef20d9555dfb6da2578043c0b3923a6f
 
+# Perf - IRQ Balance - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+vendor/bin/msm_irqbalance|c0910fb319bb8287f176f26078241299455baad0
+
 # Peripheral manager
 vendor/bin/pm-proxy
 vendor/bin/pm-service
