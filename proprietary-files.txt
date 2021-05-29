@@ -389,12 +389,13 @@ vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff1906
 vendor/lib64/libwvhidl.so|68d257f6c4b409f71f80c231789d9951f71308a8
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
 
-# ESE Powermanager - from NX627J - nubia/NX627J/NX627J:11/RKQ1.200826.002/nubia.20210129.161619:user/release-keys
-vendor/bin/hw/vendor.qti.esepowermanager@1.1-service|649bea818a6b865ab744ac0aae52657557199918
-vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc|3c024c7135ec3dd8658624509ee61396a74f1ede
-vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so|c6b853c5a008123490afeb103a979daf1eb42ee3
-vendor/lib64/vendor.qti.esepowermanager@1.0.so|1d9663e2ad911aa75da4b07a2b17dd023d4c796e
-vendor/lib64/vendor.qti.esepowermanager@1.1.so|3e71c2927fe56732b081b6476df2efbd58d27178
+# ESE-Powermanager
+vendor/bin/hw/vendor.qti.esepowermanager@1.0-service
+vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc
+vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so
+vendor/lib/vendor.qti.esepowermanager@1.0.so
+vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so
+vendor/lib64/vendor.qti.esepowermanager@1.0.so
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
@@ -547,13 +548,19 @@ vendor/bin/hw/vendor.zui.hardware.ifaa@1.0-service
 vendor/etc/init/vendor.zui.hardware.ifaa@1.0-service.rc
 vendor/lib64/vendor.zui.hardware.ifaa@1.0.so
 
-# IO Prefetcher - from NX627J - nubia/NX627J/NX627J:11/RKQ1.200826.002/nubia.20210129.161619:user/release-keys
-vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|df327ba58f5de3291c8cbfce55a22b07e34a2b52
-vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc|fd11367b2585702190ef2577ce2ce6fc68f3a2f8
-vendor/lib64/libqti-iopd-client.so|3a7d9bb5089d577ae612fa9273ace97da287b381
-vendor/lib64/libqti-iopd.so|9c1358b0021fb8d32cd609e0692792c712708736
-vendor/lib64/vendor.qti.hardware.iop@1.0.so|14a207f6656fc3f1097b3ca21002f7c3a910081a
-vendor/lib64/vendor.qti.hardware.iop@2.0.so|256dfd9f15720ff6899b622fc6d3d4e3d089e69a
+# IO Prefetcher
+vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
+vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
+vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
+vendor/lib/libqti-iopd-client.so
+vendor/lib/libqti-iopd.so
+vendor/lib/vendor.qti.hardware.iop@1.0.so
+vendor/lib/vendor.qti.hardware.iop@2.0.so
+vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
+vendor/lib64/libqti-iopd-client.so
+vendor/lib64/libqti-iopd.so
+vendor/lib64/vendor.qti.hardware.iop@1.0.so
+vendor/lib64/vendor.qti.hardware.iop@2.0.so
 
 # IPA Firmware
 vendor/firmware/ipa_fws.b00
@@ -710,32 +717,41 @@ vendor/lib64/unnhal-acc-common.so|79fd66d6a86395b95f64423f968c3d4126630477
 vendor/lib64/unnhal-acc-hta.so|2c19cdff7531b8850dac8a305b6d940129d2e85d
 vendor/lib64/unnhal-acc-hvx.so|3c8f0043ef20d9555dfb6da2578043c0b3923a6f
 
-# Perf - from NX627J - nubia/NX627J/NX627J:11/RKQ1.200826.002/nubia.20210129.161619:user/release-keys
-vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|88fea0e630507d28e0cf994b0a08d1284b544ae0
-vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
-vendor/etc/perf/commonresourceconfigs.xml|827c63cb52552af0c19a4735430f98334e1760bf
-vendor/etc/perf/perfboostsconfig.xml|da19fe8fe4df70d8e152b899e6470c0c53f8c08d
-vendor/etc/perf/perfconfigstore.xml|62f780c6f974a62d18a66d0dcee30efb04903512
-vendor/etc/perf/targetconfig.xml|95f511bb4030b2755a0b340814fe41cccac994ab
-vendor/etc/perf/targetresourceconfigs.xml|bcac95b779250981197349f926a84b67e649aa2f
-vendor/etc/powerhint.xml|6291c5da397e194a8313ca0ad720655382bef571
-vendor/lib/libperfconfig.so|e51ef56d45b31fe22255140c36c62d5f26932658
-vendor/lib/libperfgluelayer.so|3334930730e67c07afc1b92029c9890ea37b7aa4
-vendor/lib/libperfioctl.so|63f04b528f33a86ea5bf1f1e322f40a54ccc83b0
-vendor/lib/libqti-perfd-client.so|64962dd4d5e8b7fd11927c70778f79ea1cd140dd
-vendor/lib/libqti-perfd.so|522b2d258ef89f0be6029fe73b92d038d84d9a68
-vendor/lib/libqti-util.so|aad9fa70224a7d0c806790e4a274f3a86cd84316
-vendor/lib64/liblearningmodule.so|1d72665404b4f21c54b09be354388872bf9e362b
-vendor/lib64/libmeters.so|0501f7afc9629f9e1f39f40714b5292cfdaa82e4
-vendor/lib64/libperfconfig.so|a6417bae7c270aa55746c21fa553f8638e2646e7
-vendor/lib64/libperfgluelayer.so|ab07f0a6ded333726a9c5ae37a38dc91881fa11e
-vendor/lib64/libperfioctl.so|971d8108b9a6d5854be68792dc19a16c37734f59
-vendor/lib64/libqti-perfd-client.so|b6881ca5b77335490bd91c6803feb5d31cbf8e92
-vendor/lib64/libqti-perfd.so|1041e66beef3907c090ff022ab6de876a1e61f8c
-vendor/lib64/libqti-util.so|e7e1db6dbd6cfe955a849e758faea6433e3491a1
-
-# Perf - IRQ Balance - from NX627J - nubia/NX627J/NX627J:11/RKQ1.200826.002/nubia.20210129.161619:user/release-keys
-vendor/bin/msm_irqbalance|bcc114819bd50bfbefe2dfcb9f815f9959cdad44
+# Perf
+-vendor/app/pasrservice/pasrservice.apk
+vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
+vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service
+vendor/bin/msm_irqbalance
+vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
+vendor/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc
+vendor/etc/lm/AppClassifierFeature.xml
+vendor/etc/perf/commonresourceconfigs.xml
+vendor/etc/perf/perfboostsconfig.xml
+vendor/etc/perf/perfconfigstore.xml
+vendor/etc/perf/targetconfig.xml
+vendor/etc/perf/targetresourceconfigs.xml
+vendor/etc/powerhint.xml
+vendor/lib/hw/vendor.qti.power.pasrmanager@1.0-impl.so
+vendor/lib/libperfconfig.so
+vendor/lib/libperfgluelayer.so
+vendor/lib/libqti-perfd-client.so
+vendor/lib/libqti-perfd.so
+vendor/lib/libqti-util.so
+vendor/lib/libqti-utils.so
+vendor/lib64/hw/vendor.qti.power.pasrmanager@1.0-impl.so
+vendor/lib64/libadaptlaunch.so
+vendor/lib64/libappclassifier.so
+vendor/lib64/libgameoptfeature.so
+vendor/lib64/liblearningmodule.so
+vendor/lib64/libmeters-ns.so
+vendor/lib64/libmeters.so
+vendor/lib64/libperfconfig.so
+vendor/lib64/libperfgluelayer.so
+vendor/lib64/libqti-perfd-client.so
+vendor/lib64/libqti-perfd.so
+vendor/lib64/libqti-util.so
+vendor/lib64/libqti-utils.so
+vendor/lib64/vendor.qti.power.pasrmanager@1.0.so
 
 # Peripheral manager
 vendor/bin/pm-proxy
