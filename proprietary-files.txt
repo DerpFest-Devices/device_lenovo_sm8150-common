@@ -1131,11 +1131,11 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
-# Thermal
-vendor/bin/thermal-engine
-vendor/etc/thermal-engine.conf
-vendor/lib/libthermalclient.so
-vendor/lib64/libthermalclient.so
+# Thermal - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+vendor/bin/thermal-engine|bacf88c801ba037e1e1d2671937404184eb8964b
+vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
+vendor/lib/libthermalclient.so|196acc1aaae1810ea9ba56bf9e1bb9ee2e486f6a
+vendor/lib64/libthermalclient.so|8f2411404f56c6d15e6a185124bbc7f8c2adf195
 
 # Time services
 -vendor/app/TimeService/TimeService.apk
