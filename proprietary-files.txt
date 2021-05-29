@@ -162,13 +162,22 @@ vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
-# CDSP
-vendor/bin/cdsprpcd
-vendor/lib/libcdsp_default_listener.so
-vendor/lib/libcdsprpc.so
-vendor/lib64/libcdsp_default_listener.so
-vendor/lib64/libcdsprpc.so
-vendor/lib64/libsdsprpc.so
+# CDSP - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+vendor/bin/cdsprpcd|8f541eab74d52bff8d73f7f280e085c4bf706e99
+vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
+vendor/lib/libcdsp_default_listener.so|3af8e9fbe0b154574ac0a709d1af401960922471
+vendor/lib/libcdsprpc.so|ec94d3e6debbe18690e695bb35a244a8dbac1113
+vendor/lib/libfastcrc.so|9274920c249096d4b22581e72e34a60b63e0231c
+vendor/lib/libmdsprpc.so|f702b67f1c5c392de633ae409c2927b13f20052b
+vendor/lib/libsdsprpc.so|682f5f9f066268d0b61da6cf141e40924d7a6d8f
+vendor/lib/libsysmon_cdsp_skel.so|d30f7863f72cbcb6d5f657ab780bb53e02e1aaa4
+vendor/lib64/libcdfw.so|8d8265215a10c09390038c905fd7967081fbbffb
+vendor/lib64/libcdfw_remote_api.so|dc7deb7618f05907ecfd2c3004bb3e0c39ec8522
+vendor/lib64/libcdsp_default_listener.so|c639e68a44537450a7aabb3549ac9edb5b940641
+vendor/lib64/libcdsprpc.so|d4035528b6a2288b232a8c388aa8480adb7ae2cd
+vendor/lib64/libmdsprpc.so|3b43e8da9111e4171b165e6015866c495df095a5
+vendor/lib64/libsdsprpc.so|0a5fb6c179d65da6f330163e6097ebd396c36427
+vendor/lib64/libsysmon_cdsp_skel.so|e5ba4d173b0e09d736b16474ed2f57874cb91916
 
 # Charger
 vendor/bin/hvdcp_opti
