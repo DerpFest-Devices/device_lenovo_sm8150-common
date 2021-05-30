@@ -1,12 +1,13 @@
+
 # Audio
-audio.sys.noisy.broadcast.delay=600
-audio.sys.offload.pstimeout.secs=3
+audio.offload.min.duration.secs=30
+persist.vendor.audio.hac.enable=false
+ro.audio.monitorRotation=true
 
 # Bluetooth
-persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
-persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac
-persist.vendor.btstack.enable.splita2dp=true
-vendor.bluetooth.soc=cherokee 
+bt.max.hfpclient.connections=1
+vendor.bluetooth.soc=cherokee
+ro.bluetooth.library_name=libbluetooth_qti.so
 
 # Camera
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.zui.camera,org.lineageos.snap,com.android.camera

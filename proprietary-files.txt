@@ -1,34 +1,34 @@
 # All unpinned blobs below are extracted from L78051_SECURE_USER_11.5.381_ST_200603
 
-# ACDB data
-vendor/etc/acdbdata/adsp_avs_config.acdb
-vendor/etc/acdbdata/CDP/CDP_Bluetooth_cal.acdb
-vendor/etc/acdbdata/CDP/CDP_Codec_cal.acdb
-vendor/etc/acdbdata/CDP/CDP_General_cal.acdb
-vendor/etc/acdbdata/CDP/CDP_Global_cal.acdb
-vendor/etc/acdbdata/CDP/CDP_Handset_cal.acdb
-vendor/etc/acdbdata/CDP/CDP_Hdmi_cal.acdb
-vendor/etc/acdbdata/CDP/CDP_Headset_cal.acdb
-vendor/etc/acdbdata/CDP/CDP_Speaker_cal.acdb
-vendor/etc/acdbdata/CDP/CDP_workspaceFile.qwsp
-vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Codec_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
-vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
-vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Codec_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_General_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
+# ACDB data - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+vendor/etc/acdbdata/adsp_avs_config.acdb|cb17f8a86e584e82480a91b39c84db1bacf4e933
+vendor/etc/acdbdata/CDP/CDP_Bluetooth_cal.acdb|b971db5c48e3bd49b01f98a58baaf27e6d198b33
+vendor/etc/acdbdata/CDP/CDP_Codec_cal.acdb|340ecb228d69acf4b59c5f06d42a4e714bfcd0bd
+vendor/etc/acdbdata/CDP/CDP_General_cal.acdb|a847a62c27eca3b025070ab9fe3465128893119e
+vendor/etc/acdbdata/CDP/CDP_Global_cal.acdb|c6c2a61858567f86108a099b6416cd93ec2a45c4
+vendor/etc/acdbdata/CDP/CDP_Handset_cal.acdb|ca9052ea026ebb1ebcd2a757a24ef666320cf2d6
+vendor/etc/acdbdata/CDP/CDP_Hdmi_cal.acdb|af9e0b24483ef1267d07a9cb87f87b2a304aca42
+vendor/etc/acdbdata/CDP/CDP_Headset_cal.acdb|eac3841cdbcc4f10322225a154497dd44392be90
+vendor/etc/acdbdata/CDP/CDP_Speaker_cal.acdb|2e981b512fe3eb217af1fbcc2934f1d7506a8b03
+vendor/etc/acdbdata/CDP/CDP_workspaceFile.qwsp|009c44975b87f3ece2349588d8d52f40b1f8e23e
+vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb|3e3fc83d16114d35017fd210a431fc79095c5a09
+vendor/etc/acdbdata/MTP/MTP_Codec_cal.acdb|a0c707e0bc9593a7c7c6df7571c5e6e8430e9680
+vendor/etc/acdbdata/MTP/MTP_General_cal.acdb|f4af2ac2ee97f3fceda0d9c7ee5dc3ded8136ca3
+vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb|1dd161361e59a9e5bf242c6a80717ca4b72e0a20
+vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb|73198f0fd9458a99b0cd36dd12ff058b39173894
+vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb|b7f3c48529de4a654e9d029352d7b1d2f9acfebc
+vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb|b472ba3b7396447a6c43bc8eec29f77180133112
+vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb|95923502708fd80e7a8027a4458ef376a88f0492
+vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp|db1836421e4264b6a353961b1a356ea769045896
+vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb|afb7a8da0cfbdc4b7f7114588491f5f0e8fb067c
+vendor/etc/acdbdata/QRD/QRD_Codec_cal.acdb|bbb2c10b186a55e348c3a2ac473070435d6c8699
+vendor/etc/acdbdata/QRD/QRD_General_cal.acdb|47bae05fb3a060a7925a2f4969a4d2850cba8a99
+vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb|4a8de56668503d3d46197163b2593f84934baebb
+vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb|f1a8a9380183ae4ac11835aa4bfc44510aaa641a
+vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb|f8c9f9b67f860043b031accc39318baaeae09b18
+vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb|70d149e2d587f727bc53048db7ecffe94da27f1d
+vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb|0b7e79748bc4fa5e22c2104752f11dbdb929ef21
+vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp|bd2d171c2275d31f00e80634011901afb13fd818
 
 # ADSP - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
 vendor/bin/adsprpcd|b736b00857d64e74a3b9be887215124d186f95d5
@@ -66,94 +66,63 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
-# ANT+ (system_ext)
-product/lib/com.qualcomm.qti.ant@1.0.so:system_ext/lib/com.qualcomm.qti.ant@1.0.so
-product/lib64/com.qualcomm.qti.ant@1.0.so:system_ext/lib64/com.qualcomm.qti.ant@1.0.so
--system/lib/libantradio.so:system_ext/lib/libantradio.so
--system/lib64/libantradio.so:system_ext/lib64/libantradio.so
+# ANT+ - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+system_ext/lib/com.qualcomm.qti.ant@1.0.so|7f0a30f717a591ce16785a1ac1973cc0e1830111
+system_ext/lib64/com.qualcomm.qti.ant@1.0.so|1860cfe896871694dae434daebf04927fde6347e
+vendor/lib64/hw/com.dsi.ant@1.0-impl.so|b5c57fdf48447c68b6308fdcb167d0d21b5c56ed
 
-# ANT+ (vendor)
-vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so
-vendor/lib/com.qualcomm.qti.ant@1.0.so
-vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
-vendor/lib64/com.qualcomm.qti.ant@1.0.so
+# Audio libraries - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+vendor/lib/soundfx/libasphere.so|e5b0484dd81b124e5f82cae2355a74302e81291c
+vendor/lib/soundfx/libqcbassboost.so|9c6f925a8170f7d4a4456ea35c7a428aeeca4750
+vendor/lib/soundfx/libqcreverb.so|5720f19a3797dadd66251930f25cf60ff9f53e6a
+vendor/lib/soundfx/libqcvirt.so|eb40eecb6a7c1e140b91cf5cb0e9369c3ca22913
+vendor/lib/soundfx/libshoebox.so|f22fca7ce99d0d12eaee8484b820f8c3c50651c2
+vendor/lib/soundfx/libswdap.so|329e9c6b9ee677edc3ea3b89facd50e835d728f4
+vendor/lib/hw/audio.primary.msmnile.so|eb7fdefcae2954db3f5d712c0aea2bcc72baf39e
+vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so|812e127cf4b24ab9d8f4c6be6016b8747e7b95eb
+vendor/lib/liba2dpoffload.so|649c27c6093a9252631ab7963f974398ae6cd92c
+vendor/lib/libacdb-fts.so|519ff80ab175803e28ad8c135c5d5e35c09924a7
+vendor/lib/libacdbloader.so|8ef4346a00bbf6e1841f1ad938b88922e7393c33
+vendor/lib/libacdbrtac.so|2816801fa7f1783f1e52fe71852c4ca1bd8bf25d
+vendor/lib/libadiertac.so|4822393089814de56cf634e0ad1f54ccba88c73a
+vendor/lib/libadm.so|61825f91c7f02e685c03d1fb78aeb3bd2d5db10b
+vendor/lib/libadsprpc.so|27314bc8db211dc1b65b9bb52892a522bdf3ec78
+vendor/lib/libaudcal.so|2c4389a1f17fd7eda3b2580b49c3c8a78741c5e2
+vendor/lib/libaudio_log_utils.so|49c4d35f25e02b6cc9b4c524f034766189d974e3
+vendor/lib/libaudioconfigstore.so|e06563c43c0ed2f53d10d4744bfa0c1cf96f6db8
+vendor/lib/libclimax.so|803d5e048971c03f8b8bdcbd1d9ab121627acdf8
+vendor/lib/libqtigef.so|44a4df38dd3c9cecdd071270cb2ec6555bdca461
+vendor/lib/libssrec.so|0f3aefd428b4acf6ace37f75d70aa1d457476f9e
+vendor/lib/vendor.qti.hardware.audiohalext@1.0.so|4b0eeab111fc602368ca260ce1727bff3ccaf92c
+vendor/lib64/hw/audio.primary.msmnile.so|c9accecf70d0aa67690a62ece4dc91672edc4c52
+vendor/lib64/libadsprpc.so|2479ecaa940db3e48368e0614f562af11e559cf2
+vendor/lib64/libclimax.so|15ec2426fc9ff5523726100ba598f1ca876683fd
 
-# Audio
-vendor/lib/btaudio_offload_if.so
-vendor/lib/hw/audio.bluetooth_qti.default.so
-vendor/lib/hw/audio.primary.msmnile.so
-vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
-vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcreverb.so
-vendor/lib/soundfx/libqcvirt.so
-vendor/lib/soundfx/libshoebox.so
-vendor/lib/soundfx/libswdap.so
-vendor/lib/libacdb-fts.so
-vendor/lib/libacdbloader.so
-vendor/lib/libacdbrtac.so
-vendor/lib/libadiertac.so
-vendor/lib/libadsprpc.so
-vendor/lib/libadm.so
-vendor/lib/libaudcal.so
-vendor/lib/libaudio_log_utils.so
-vendor/lib/libaudioalsa.so
-vendor/lib/libaudioconfigstore.so
-vendor/lib/libaudioparsers.so
-vendor/lib/libbluetooth_audio_session_qti.so
-vendor/lib/libclimax.so
-vendor/lib/libdapparamstorage.so
-vendor/lib/libdrc.so
-vendor/lib/libqtigef.so
-vendor/lib/libsurround_3mic_proc.so
-vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
-vendor/lib64/btaudio_offload_if.so
-vendor/lib64/hw/audio.bluetooth_qti.default.so
-vendor/lib64/hw/audio.primary.msmnile.so
-vendor/lib64/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
-vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libqcbassboost.so
-vendor/lib64/soundfx/libqcreverb.so
-vendor/lib64/soundfx/libqcvirt.so
-vendor/lib64/soundfx/libshoebox.so
-vendor/lib64/soundfx/libswdap.so
-vendor/lib64/libacdb-fts.so
-vendor/lib64/libacdbloader.so
-vendor/lib64/libacdbrtac.so
-vendor/lib64/libadiertac.so
-vendor/lib64/libadsprpc.so
-vendor/lib64/libaudcal.so
-vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libaudioalsa.so
-vendor/lib64/libaudioconfigstore.so
-vendor/lib64/libaudioparsers.so
-vendor/lib64/libbluetooth_audio_session_qti.so
-vendor/lib64/libclimax.so
-vendor/lib64/libdapparamstorage.so
-vendor/lib64/libqtigef.so
-vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
+# Bluetooth - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|275aeb202001803c6bd6d632bf7958c8775468ad
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|7dd3049afc807bc50629bd2eb69154234e2b5f22
+vendor/lib64/libbtnv.so|07e031527e60ce5e62a5017fd1d7ff83ef1aafcf
 
-# Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
-vendor/lib/liba2dpoffload.so
-vendor/lib/libbt-hidlclient.so
-vendor/lib/libbthost_if.so
-vendor/lib/libbtnv.so
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/liba2dpoffload.so
-vendor/lib64/libbt-hidlclient.so
-vendor/lib64/libbthost_if.so
-vendor/lib64/libbtnv.so
-vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so
+# Bluetooth (A2DP) - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+vendor/lib/hw/audio.bluetooth_qti.default.so|56d9d4cde6df8b066fc84f509e4dad9fe9c7c255
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|cdc97c1e06642d39d49ec055a86896cf1bd3b4c1
+vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|61c91107a4032634f1520340e75f015e44fd8dbc
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|1df393fc39d60727becb875fd86716d057bed3b1
+vendor/lib/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|923324f9b2dfa4d6d2f2969758bdd75713ea132b
+vendor/lib/btaudio_offload_if.so|29d13cf463ff767ef20ee473a4a13e8167f3326e
+vendor/lib/libbluetooth_audio_session_qti.so|9fe96dc9248841161431009213d5329b2877029f
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so|7e4587a1ac13de4d1ee8463b3aae487346f31b12
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so|fbce94fed6a22fd527506d14d10a4df785b8fa25
+vendor/lib64/hw/audio.bluetooth_qti.default.so|e628e65d5c07c81ff96783217f8aaf46702aa992
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|b66dd9afad70780943187074abb332f84c6734d7
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|a97a6c330c932176acee0bce820c6e737778aed4
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|3e355ba4be40f42ae02bbc791757268f8c2e6ad9
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|fff399477117ab9398bdf9092f2fe847c7abb73c
+vendor/lib64/btaudio_offload_if.so|cdf8f2cf1964d260ad472d6cabf0bde186f236a2
+vendor/lib64/libbluetooth_audio_session_qti.so|9260e1e8011a68205474299dbb10ffcfeb34ee3a
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|d1443e04e24cb45dd06f5d222b22a699c9e82cb1
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|1671815a79dab0fde9248d0851085ec1ab314f64
 
 # Bluetooth (aptX) - from crosshatch-user 11 RP1A.201105.002 6869500 release-keys
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
