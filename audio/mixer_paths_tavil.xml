@@ -91,6 +91,7 @@
     <ctl name="DISPLAY_PORT Mixer MultiMedia14" value="0" />
     <ctl name="DISPLAY_PORT Mixer MultiMedia15" value="0" />
     <ctl name="DISPLAY_PORT Mixer MultiMedia16" value="0" />
+    <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia1" value="0" />
     <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia1" value="0" />
     <ctl name="SLIMBUS_6_RX Audio Mixer MultiMedia1" value="0" />
     <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia2" value="0" />
@@ -472,7 +473,7 @@
     <ctl name="RX INT2 DEM MUX" value="CLSH_DSM_OUT" />
 
     <!-- Headphone Default mode - uLP -->
-    <ctl name="RX HPH Mode" value="CLS_H_HIFI" />
+    <ctl name="RX HPH Mode" value="CLS_H_ULP" />
     <ctl name="ASRC0 Output Mode" value="INT" />
     <ctl name="ASRC1 Output Mode" value="INT" />
 
@@ -570,6 +571,10 @@
     </path>
 
     <path name="echo-reference-voip headphones">
+        <ctl name="AUDIO_REF_EC_UL10 MUX" value="SLIM_6_RX" />
+    </path>
+
+    <path name="echo-reference-voip headphones headphones">
         <ctl name="AUDIO_REF_EC_UL10 MUX" value="SLIM_6_RX" />
     </path>
 
@@ -714,26 +719,32 @@
     </path>
     <path name="low-latency-playback jzwcombo">
         <path name="low-latency-playback usb-headphones" />
-		<ctl name="SLIMBUS_6_RX Audio Mixer MultiMedia5" value="1" />
-		<path name="headphones" />
+	<ctl name="SLIMBUS_6_RX Audio Mixer MultiMedia5" value="1" />
+	<path name="headphones" />
     </path>
     <path name="low-latency-playback jzwcombo1">
-		<path name="bt-a2dp" />
+	<path name="bt-a2dp" />
         <ctl name="USB_AUDIO_RX Audio Mixer MultiMedia5" value="1" />
-		<ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia5" value="1" />
+	<ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia5" value="1" />
     </path>
     <path name="low-latency-playback jzwcombo2">
         <ctl name="SLIMBUS_6_RX Audio Mixer MultiMedia5" value="1" />
-		<ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia5" value="1" />
-		<path name="headphones" />
-		<path name="bt-a2dp" />
+	<ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia5" value="1" />
+	<path name="headphones" />
+	<path name="bt-a2dp" />
     </path>
     <path name="low-latency-playback jzwcombo3">
-		<ctl name="USB_AUDIO_RX Audio Mixer MultiMedia5" value="1" />
-	    <ctl name="SLIMBUS_6_RX Audio Mixer MultiMedia5" value="1" />
-		<ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia5" value="1" />
+	<ctl name="USB_AUDIO_RX Audio Mixer MultiMedia5" value="1" />
+        <ctl name="SLIMBUS_6_RX Audio Mixer MultiMedia5" value="1" />
+	<ctl name="SLIMBUS_7_RX Audio Mixer MultiMedia5" value="1" />
+	<path name="headphones" />
+	<path name="bt-a2dp" />
+    </path>
+
+    <path name="low-latency-playback speaker-safe-and-usb-headphones">
+        <path name="low-latency-playback usb-headphones" />
+		<ctl name="SLIMBUS_6_RX Audio Mixer MultiMedia5" value="1" />
 		<path name="headphones" />
-		<path name="bt-a2dp" />
     </path>
     <path name="low-latency-playback headphones">
         <ctl name="SLIMBUS_6_RX Audio Mixer MultiMedia5" value="1" />
@@ -2399,6 +2410,8 @@
 
     <path name="camcorder-mic">
         <path name="handset-mic" />
+        <ctl name="ADC1 Volume" value="16" />
+        <ctl name="ADC4 Volume" value="16" />
     </path>
 
     <path name="bt-sco-headset">
