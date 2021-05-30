@@ -447,51 +447,54 @@ vendor/lib64/vendor.qti.gnss@4.0-service.so|3c75d133af5193436167380aa89abcf05d07
 vendor/lib64/vendor.qti.gnss@4.0.so|7d343c73e6720434045cc38ea0e570ae9d03cd51
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|19a1f7ffb8118c207aa8cb2318996605771c339a
 
-# Graphics
-vendor/lib/egl/eglSubDriverAndroid.so
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/egl/libq3dtools_esx.so
-vendor/lib/egl/libQTapGLES.so
-vendor/lib/hw/vulkan.msmnile.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libC2D2.so
-vendor/lib/libc2d30_bltlib.so
-vendor/lib/libCB.so
-vendor/lib/libgsl.so
-vendor/lib/libllvm-glnext.so
-vendor/lib/libllvm-qcom.so
-vendor/lib/libOpenCL.so
-vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
-vendor/lib64/egl/libGLESv2_adreno.so
-vendor/lib64/egl/libq3dtools_adreno.so
-vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/egl/libQTapGLES.so
-vendor/lib64/hw/vulkan.msmnile.so
-vendor/lib64/libadreno_utils.so
-vendor/lib64/libC2D2.so
-vendor/lib64/libc2d30_bltlib.so
-vendor/lib64/libCB.so
-vendor/lib64/libgsl.so
-vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
-vendor/lib64/libOpenCL.so
+# Graphics (Adreno) - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+-vendor/app/com.qualcomm.qti.gpudrivers.msmnile.api30/com.qualcomm.qti.gpudrivers.msmnile.api30.apk;PRESIGNED|48806ee3413a591ab35a262b3c0f88fd8ea85fbf
+vendor/lib/egl/eglSubDriverAndroid.so|70f2c481e24a42c9e899719a7de11fc45f31eb80
+vendor/lib/egl/libEGL_adreno.so|a1ebde8802bddd24745983dbd5a81a520afaf5c3
+vendor/lib/egl/libGLESv1_CM_adreno.so|b94ba8188a14dd262abac1b8d667bce3319cf344
+vendor/lib/egl/libGLESv2_adreno.so|ac3716a060ece26fc345c4a3ce773970905b321f
+vendor/lib/egl/libq3dtools_adreno.so|2ac81ee05dd4afb34ef6e56342ee1757f2db1409
+vendor/lib/egl/libq3dtools_esx.so|3d683dcf2892cdd6dd00b38717454abb45204e7a
+vendor/lib/libadreno_utils.so|543ab6ed489bd668546ff0b2beb1bfde87518ee5
+vendor/lib/libC2D2.so|267be7bd6768fa3b9bed2b9a42062cb5a77ca59b
+vendor/lib/libc2d30_bltlib.so|950c705e6dbc02b646a0129e66e94e192f5cd87f
+vendor/lib/libCB.so|95f6759048bca3a9144bedd4da34ae3726d9acfe
+vendor/lib/libgpudataproducer.so|f7b97ea883a0c0e269a08f9c59508c670a9fc5ea
+vendor/lib/libgsl.so|054ed225b52e7846221246c1f3dd4332738a582e
+vendor/lib/libllvm-glnext.so|e3b7d7d4a29dc6fa92eca0c2904290a1259b31d5
+vendor/lib/libllvm-qcom.so|fd077b004c53191aba2fa8a82f9a4301ba0e8c13
+vendor/lib/libOpenCL.so|594490738cf3729baa2a745c4f7cbc073d806ede
+vendor/lib/libVkLayer_q3dtools.so|5866382a9e0a9a8a71125e8427d6aa4e190a66e4
+vendor/lib64/egl/eglSubDriverAndroid.so|e61711cfb952e9abb9e64d4da2e62fa16879af13
+vendor/lib64/egl/libEGL_adreno.so|8f3435dbecb22fd3217698ebbd9b002ad2420576
+vendor/lib64/egl/libGLESv1_CM_adreno.so|e2e8a079e680bf92f686fb79146651c158f6e130
+vendor/lib64/egl/libGLESv2_adreno.so|d3ded1363c6a5c1380eccb75ded05ad3018c8126
+vendor/lib64/egl/libq3dtools_adreno.so|046be35d03cbea2c73a1339eefa1bffc87ab6ebc
+vendor/lib64/egl/libq3dtools_esx.so|6d6fa0679a4904d4aaa7e6030b7765acb8134e32
+vendor/lib64/libadreno_utils.so|5f443c3d118d534d59139c56658f58962cdf93c5
+vendor/lib64/libC2D2.so|6fb775e393ce7161b30e3a71fa0f320e86374425
+vendor/lib64/libc2d30_bltlib.so|aa37c84cf6cc1e1ac670b433c97d0bf41308f9ca
+vendor/lib64/libCB.so|cd781270af2833a4568e854375b0fa27dda232c6
+vendor/lib64/libgpudataproducer.so|35e572b0f91c74a1d1da0b87b109c4215c3271e8
+vendor/lib64/libgsl.so|d2d2d524882db9500260a8cd9883e9e9446318ac
+vendor/lib64/libllvm-glnext.so|6bf88dd28b9f967c63382610f5064b25bf25d89d
+vendor/lib64/libllvm-qcom.so|05d5103b81aefcc12ddf5de841ddf0df2ae88ad1
+vendor/lib64/libOpenCL.so|8c8489db818c4089459574090d6111db4e0802d0
+vendor/lib64/libVkLayer_q3dtools.so|ee5f04c4847dcdf9816bde46380746f9bc0580ed
 
-# Graphics firmware
-vendor/firmware/a630_gmu.bin
-vendor/firmware/a630_sqe.fw
-vendor/firmware/a640_gmu.bin
-vendor/firmware/a640_zap.b00
-vendor/firmware/a640_zap.b01
-vendor/firmware/a640_zap.b02
-vendor/firmware/a640_zap.elf
-vendor/firmware/a640_zap.mdt
-vendor/firmware/leia_pfp_470.fw
-vendor/firmware/leia_pm4_470.fw
+# Graphics (Adreno firmware) - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+vendor/firmware/a630_gmu.bin|32bb4acc7767c47ddb487ed7cb998d465ee462f2
+vendor/firmware/a630_sqe.fw|e25094f97b44244775cc38a9d909fba6bd4cf76b
+vendor/firmware/a640_gmu.bin|fb1eab0dd5f313abf31441e2209c9398da7df98b
+vendor/firmware/a640_zap.b00|7afc31984d7eeacdd0fc78118ad8fa46c9b3e4ee
+vendor/firmware/a640_zap.b01|940868ef16c1068a79cbed4e04613ca1ad551efd
+vendor/firmware/a640_zap.b02|991903c32e25c8224cac3ed74009b65a291fbb5f
+vendor/firmware/a640_zap.elf|cac93211c1a666416bba734a2312d60c240a118f
+vendor/firmware/a640_zap.mdt|203b6a2c2c8b32b4b1cc9c8fdc43b661f8681d69
+
+# Graphics (Vulkan) - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+vendor/lib/hw/vulkan.adreno.so|040b1bfaa025c0eae3a69df306f0567ea6fe1960
+vendor/lib64/hw/vulkan.adreno.so|dbe08047ec51224d63645180673eb7db1db2a004
 
 # HBTP
 vendor/etc/hbtp/hbtpcfg_sdm855_801s_4k.dat
