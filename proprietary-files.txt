@@ -388,6 +388,7 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so|17e86e9a2054db733d955fcf1066f6e06a44f
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|de1e8d026b16255040dbe6eb67faa73c9b656553
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|74ff564ec413866644361401ef5cf8d55846ead5
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so|1dcf731eb554eb5a84d51e8aae7a6dff61780318
+vendor/lib/libqcbor.so|6f90ae6aee92a4a09b34432cb6b95dc1977f4772
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|9042059c28de1ed06f6e0795b6d7ee9bb9d939ab
 vendor/lib64/libqcbor.so|df6a3f00d7d49e482e0ca2937f5bd708fba32ae6
 
@@ -525,23 +526,23 @@ vendor/firmware/ipa_uc.b02
 vendor/firmware/ipa_uc.elf
 vendor/firmware/ipa_uc.mdt
 
-# Keystore
-vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
-vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
-vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti
-vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
-vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
-vendor/lib/libkeymasterdeviceutils.so
-vendor/lib/libkeymasterprovision.so
-vendor/lib/libkeymasterutils.so
-vendor/lib/libqtikeymaster4.so
-vendor/lib/libspcom.so
-vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
-vendor/lib64/libkeymasterdeviceutils.so
-vendor/lib64/libkeymasterprovision.so
-vendor/lib64/libkeymasterutils.so
-vendor/lib64/libqtikeymaster4.so
-vendor/lib64/libspcom.so
+# Keymaster - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|cce8913b8bdbdf0e50f5fdecd47823a11330534b
+vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|b361b15b60da3185c196c85abdab6646e4d7d4f8
+vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti|43e18dd04793654da2749620de8dce115f545a4c
+vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc|c8999fb1bccbef81e6b362059e9a6ebd023de98f
+vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so|e73926c00d4bf601bab9889ea9b18b3f5088363a
+vendor/lib/libkeymasterdeviceutils.so|41ee4b220726a71ba5a0b68b3afd36f5f78a27ae
+vendor/lib/libkeymasterprovision.so|9d8dd62b95fd0aceb801f4ee06a62d0d9808b33f
+vendor/lib/libkeymasterutils.so|aeb984222fbd7d6881f9915a5ad1a9ab828c862b
+vendor/lib/libqtikeymaster4.so|8fae3676abb1aa893e441ef829517a108d0ec33b
+vendor/lib/libspcom.so|5622f25f9b337ef6280924d46582f9541f4a4438
+vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so|bc95d15d27309862516dd88c11d6308f446ee1f0
+vendor/lib64/libkeymasterdeviceutils.so|9758d74c95bb62eb15e8f4e9f1d300e8a4da64ae
+vendor/lib64/libkeymasterprovision.so|23f22e2fefa33dba77cd076a9a045f401146f2b1
+vendor/lib64/libkeymasterutils.so|db21b2fec8e5808c562665746d0394575004070b
+vendor/lib64/libqtikeymaster4.so|f2cc49a9f7514828b994cd69bcc78ec73dbbc061
+vendor/lib64/libspcom.so|c7d36d8fc648d8239e95ed30980b524d0f6a07d8
 
 # Listen
 vendor/lib/libadpcmdec.so
