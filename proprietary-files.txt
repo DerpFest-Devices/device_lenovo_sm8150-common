@@ -221,12 +221,11 @@ vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so|e039cd57df22cd762f7054b0f2ffe
 vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so|5a045ddcfe58845e0f0a447b4a0ecf5b29a56b64
 vendor/lib64/vendor.qti.latency@2.0.so|c4de1ba004bd8d07dbe92f58abb6250c7bbaf968
 
-# ConfigStore
--product/framework/vendor.qti.hardware.capabilityconfigstore-V1.0-java.jar
-vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
-vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
-vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
+# Configstore - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|8a64779e1a5df5153f10871cf23c65c3f7f94ae7
+vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede0250585a44b01d351bbc301d7a13cc3d783d
+vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|eb1a99915765fca7add8de87d7c4ef9bf031e155
+vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|3e517ec6b4603c6c1f5945b3f131aa69bccb0b08
 
 # CVP
 vendor/bin/hw/vendor.qti.hardware.cvp@1.0-service
@@ -362,36 +361,35 @@ vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so|17f648402c874e4f981caadd9
 vendor/lib64/vendor.qti.esepowermanager@1.0.so|a114629809e67015a14e5e367c6fb374adaafbc2
 vendor/lib64/vendor.qti.esepowermanager@1.1.so|f111cf42439d28fe88d9ebf6b6a1c44b729a3194
 
-# Fingerprint
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
-vendor/firmware/goodix_cfg_group.bin
-vendor/firmware/goodix_firmware.bin
-vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib64/hw/fingerprint.default.so
-vendor/lib64/libgf_hal.so
-vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
-vendor/lib64/vendor.goodix.extend.service@2.0.so
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
+# Fingerprint - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service|92d8c639935ad51fdd3a0d062ccb348351d1a30b
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|a074aa25cbb5e7aab9d2b8cabea56992632ab685
+vendor/lib/vendor.qti.hardware.fingerprint@1.0.so|6e6c55128d28b7e888c8d7b7b0ceee7838c14b13
+vendor/lib64/hw/fingerprint.default.so|c4362ad051c213f2a189855c29766a8dd1d3ab97
+vendor/lib64/libgf_hal.so|577cd31ff1ad9f461dc184269b8789b821ac6c48
+vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so|adc2ba89c49215c0daaf26983fe3be743bf593c4
+vendor/lib64/vendor.goodix.extend.service@2.0.so|f339ed26b85113b281553a9115e731eeccd49f15
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|768ffa49f8438fe2f978a6f6288bb0e3d5cde269
 
-# FM
-product/lib/vendor.qti.hardware.fm@1.0.so:system_ext/lib/vendor.qti.hardware.fm@1.0.so
-product/lib64/vendor.qti.hardware.fm@1.0.so:system_ext/lib64/vendor.qti.hardware.fm@1.0.so
-system/lib/fm_helium.so:system_ext/lib/fm_helium.so
-system/lib/libfm-hci.so:system_ext/lib/libfm-hci.so
-system/lib64/fm_helium.so:system_ext/lib64/fm_helium.so
-system/lib64/libfm-hci.so:system_ext/lib64/libfm-hci.so
-vendor/bin/fm_qsoc_patches
-vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib/vendor.qti.hardware.fm@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
+# FM - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+product/lib/vendor.qti.hardware.fm@1.0.so:system_ext/lib/vendor.qti.hardware.fm@1.0.so|7b797634343736613bc7e447c7864b226a54014d
+product/lib64/vendor.qti.hardware.fm@1.0.so:system_ext/lib64/vendor.qti.hardware.fm@1.0.so|4a2522113d6b737a87d3b43233f1afa94d9e45ad
+system/lib/fm_helium.so:system_ext/lib/fm_helium.so|3134029a5de146bd722055ed20165b104bb60bd1
+system/lib/libfm-hci.so:system_ext/lib/libfm-hci.so|cc3a54738aa34f33122bcc77423bd069c99326c4
+system/lib64/fm_helium.so:system_ext/lib64/fm_helium.so|55ef376cc802574df92025bebaba1cebcc74a918
+system/lib64/libfm-hci.so:system_ext/lib64/libfm-hci.so|0cfbf3d84724428721973cc7ad22f5d1e1368591
+vendor/bin/fm_qsoc_patches|5bddf9cc35f82617e89c83c184b8e757b6b36aa5
+vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so|b9f591827754072f37533bad78134d652a47035a
+vendor/lib/vendor.qti.hardware.fm@1.0.so|ec14a34ecae5061d674283499a812374c8be4ce5
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|f74f7df9f4ababb1e54c5ab49b3ce60728192848
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|17e86e9a2054db733d955fcf1066f6e06a44fb21
 
-# Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+# Gatekeeper - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|de1e8d026b16255040dbe6eb67faa73c9b656553
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|74ff564ec413866644361401ef5cf8d55846ead5
+vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so|1dcf731eb554eb5a84d51e8aae7a6dff61780318
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|9042059c28de1ed06f6e0795b6d7ee9bb9d939ab
+vendor/lib64/libqcbor.so|df6a3f00d7d49e482e0ca2937f5bd708fba32ae6
 
 # GPS - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti|d458a2aadc1d00df4696d6793e550f4a9422a2c9
@@ -508,10 +506,10 @@ vendor/lib64/libhbtpfrmwk.so
 # Input
 system/etc/excluded-input-devices.xml
 
-# IFAA
-vendor/bin/hw/vendor.zui.hardware.ifaa@1.0-service
-vendor/etc/init/vendor.zui.hardware.ifaa@1.0-service.rc
-vendor/lib64/vendor.zui.hardware.ifaa@1.0.so
+# IFAA - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+vendor/bin/hw/vendor.zui.hardware.ifaa@1.0-service|fcd86eb795fc3876f95dddcdaba7287daca8944c
+vendor/etc/init/vendor.zui.hardware.ifaa@1.0-service.rc|7f1e142b46e4c83d4c0e5a98ce9e9f313611d99a
+vendor/lib64/vendor.zui.hardware.ifaa@1.0.so|f0a41f2ad068922a43585c0b9099b22bcbd558e5
 
 # IPA Firmware
 vendor/firmware/ipa_fws.b00
@@ -636,11 +634,11 @@ vendor/lib64/libswvdec.so|888b704def0068f0ec882aa5227ba78bec56d522
 # Perf - IRQ Balance - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
 vendor/bin/msm_irqbalance|c0910fb319bb8287f176f26078241299455baad0
 
-# Peripheral manager
-vendor/bin/pm-proxy
-vendor/bin/pm-service
-vendor/lib/libperipheral_client.so
-vendor/lib64/libperipheral_client.so
+# Peripheral manager - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+vendor/bin/pm-proxy|a9ed48eb4738a848a1f73ca7873a35023eac6463
+vendor/bin/pm-service|103510ce9cc410d4f9ee57481d6acbde5a70418a
+vendor/lib64/libperipheral_client.so|8cb65f4c93719767048dd7b1b845473fe6074ff7
+vendor/lib64/libspcom.so|c7d36d8fc648d8239e95ed30980b524d0f6a07d8
 
 # Power-off alarm - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
 -product/app/PowerOffAlarm/PowerOffAlarm.apk|5dd40dcc10d5dad8467c8931df23bab48aea0517
@@ -696,20 +694,6 @@ vendor/lib/libqmi_common_so.so|debcc5644bd7b459f98b3e743db694938c791b1a
 vendor/lib/libqmi_csi.so|f894b371222abc94d759bb0260bcb44f3b067bee
 vendor/lib/libqmi_encdec.so|42f1d3da38170a5a69edaeb459db8425f455c625
 vendor/lib/libqmiservices.so|4b8aece94c02b56474b6044e4bdef749a4d91822
-
-# Qualcomm Trusted Execution Environment
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
-vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
-vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib/libGPQTEEC_vendor.so
-vendor/lib/libGPTEE_vendor.so
-vendor/lib/libQTEEConnector_vendor.so
-vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib64/libGPQTEEC_vendor.so
-vendor/lib64/libGPTEE_vendor.so
-vendor/lib64/libQTEEConnector_vendor.so
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # Radio - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
 -system_ext/app/DeviceInfo/DeviceInfo.apk|33d0cf5674dd5c7e3e2e29b12edae975520391d7
@@ -1013,16 +997,25 @@ vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
 vendor/lib/libthermalclient.so|196acc1aaae1810ea9ba56bf9e1bb9ee2e486f6a
 vendor/lib64/libthermalclient.so|8f2411404f56c6d15e6a185124bbc7f8c2adf195
 
-# Time services
--vendor/app/TimeService/TimeService.apk
-vendor/bin/time_daemon
-vendor/lib64/libtime_genoff.so
+# Time services - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+-vendor/app/TimeService/TimeService.apk|fae6f026bfb736e715c3e0ec07408a6e7162a066
+vendor/bin/time_daemon|e62d164b8c8b30743837896d4c5e8bca39b364e6
+vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
+vendor/lib64/libtime_genoff.so|3f57de1aeb7aa113a0a579cebed85ab4405b9b49
 
-# Trusted User Interface
-vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
-vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
-vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
-vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
+# Trusted Execution Environment connector - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|f8dc88c7166ffc2c1d997e7d5f16a8eb69c37cfc
+vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|f7b9b7baafeb6b822df3e8ee584afe856885684f
+vendor/lib64/libGPQTEEC_vendor.so|22bf79c99fffb5a96c5a674e9d002f6472267de1
+vendor/lib64/libGPTEE_vendor.so|a8896a022e2b977997a40be9c584ff778d25c0f9
+vendor/lib64/libQTEEConnector_vendor.so|62d8993f51e0d4a0c4d6ae2645512ddfc76577f3
+vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|29130d7b0050885a6b455390a02a8615563403c4
+
+# Trusted User Interface - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|e8d97981d09a4e34907d13bcbbd10f03572c9218
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|960561ba01e28777e099294fb0a9a749e2b2a775
 
 # VPP - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
 vendor/bin/vppservice|55039efdfcd2d837d76fff9b442470d10cffce89
