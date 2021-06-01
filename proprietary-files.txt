@@ -136,8 +136,8 @@ vendor/lib64/libmdsprpc.so|3b43e8da9111e4171b165e6015866c495df095a5
 vendor/lib64/libsdsprpc.so|0a5fb6c179d65da6f330163e6097ebd396c36427
 vendor/lib64/libsysmon_cdsp_skel.so|e5ba4d173b0e09d736b16474ed2f57874cb91916
 
-# Charger
-vendor/bin/hvdcp_opti
+# Charger - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+vendor/bin/hvdcp_opti|9399f40c1663eaeb618a2103057a9112f04fc712
 
 # CNE - from NX627J - nubia/NX627J/NX627J:11/RKQ1.200826.002/nubia.20210129.161619:user/release-keys
 system_ext/framework/com.quicinc.cne.api-V1.1-java.jar|88da95df5925ab3c173f951cfe56c95699908359
