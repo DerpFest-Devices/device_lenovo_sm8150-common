@@ -12,6 +12,7 @@ binder_call(hal_fod_lenovo_msmnile, hal_fingerprint)
 
 # Allow hal_fod_lenovo_msmnile to hal_fingerprint_hwservice
 allow hal_fod_lenovo_msmnile hal_fingerprint_hwservice:hwservice_manager find;
+allow hal_fod_lenovo_msmnile default_android_hwservice:hwservice_manager { find add };
 
 # Allow hal_fod_lenovo_msmnile to read/write files in sysfs_graphics for brightness
 allow hal_fod_lenovo_msmnile sysfs_graphics:dir r_dir_perms;
