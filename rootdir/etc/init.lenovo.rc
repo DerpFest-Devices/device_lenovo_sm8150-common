@@ -2,8 +2,6 @@ on post-fs
     #goodix
     chown system system /dev/goodix_fp
     chmod 666 /dev/goodix_fp
-    chown system system /sys/class/dsi_hbm/hbm/enable
-    chown system system /sys/class/backlight/panel0-hbm/brightness
     chown audioserver audio /sys/bus/i2c/devices/2-0034/reg
     chown audioserver audio  /sys/bus/i2c/devices/2-0034/rw
 

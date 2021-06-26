@@ -1,6 +1,4 @@
 on init
-    chown system system /sys/class/backlight/panel0-hbm/brightness
-    chmod 0660 /sys/class/backlight/panel0-hbm/brightness 
     chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_bl
     chmod 0666 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_bl
     chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_hbm
