@@ -90,10 +90,10 @@ on property:sys.boot_completed=1
     chmod 440 /proc/net/unix
 
 on property:vendor.display.lcd_density=560
-    setprop dalvik.vm.heapgrowthlimit 256m
+   setprop dalvik.vm.heapgrowthlimit 256m
 
 on property:vendor.display.lcd_density=640
-    setprop dalvik.vm.heapgrowthlimit 512m
+   setprop dalvik.vm.heapgrowthlimit 512m
 
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
@@ -135,19 +135,19 @@ on charger
     setprop sys.usb.configfs 1
 
 service vendor.thermal-engine /vendor/bin/thermal-engine
-    class main
-    user root
-    socket thermal-send-client stream 0666 system system
-    socket thermal-recv-client stream 0660 system system
-    socket thermal-recv-passive-client stream 0666 system system
-    socket thermal-send-rule stream 0660 system system
-    group root system
+   class main
+   user root
+   socket thermal-send-client stream 0666 system system
+   socket thermal-recv-client stream 0660 system system
+   socket thermal-recv-passive-client stream 0666 system system
+   socket thermal-send-rule stream 0660 system system
+   group root system
+
 
 service vendor.lowi /vendor/bin/sscrpcd
-    class core
-    user system
-    group system wakelock
-    capabilities BLOCK_SUSPEND
+   class core
+   user system
+   group system
 
 
 service vendor.mdm_helper /vendor/bin/mdm_helper
