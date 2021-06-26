@@ -30,6 +30,7 @@
         android:minSdkVersion="24" />
 
     <application
+        android:icon="@drawable/ic_settings_device"
         android:label="@string/device_title"
         android:theme="@style/AppTheme">
 
@@ -43,7 +44,7 @@
             </intent-filter>
             <meta-data
                 android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.display" />
+                android:value="com.android.settings.category.ia.homepage" />
             <meta-data android:name="com.android.settings.summary"
                 android:resource="@string/device_summary" />
         </activity>
