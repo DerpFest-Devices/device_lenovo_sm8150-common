@@ -7,6 +7,8 @@ genfscon proc /sys/kernel/sched_energy_aware                                    
 genfscon sysfs /devices/platform/soc/1d84000.ufshc/clkgate_enable               u:object_r:vendor_sysfs_scsi_host:s0
 
 # Label wakeup nodes symlinks from /sys/class/wakeup
+genfscon sysfs /devices/virtual/fastrpc/adsprpc-smd/wakeup                           u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/fastrpc/adsprpc-smd-secure/wakeup                    u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_aac/wakeup                                  u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_alac/wakeup                                 u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_amrnb/wakeup                                u:object_r:sysfs_wakeup:s0
