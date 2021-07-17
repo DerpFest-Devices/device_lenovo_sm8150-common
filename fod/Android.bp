@@ -44,6 +44,7 @@ cc_binary {
     ],
     name: "vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.lenovo_msmnile",
     init_rc: ["vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.lenovo_msmnile.rc"],
+    vintf_fragments: ["vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.lenovo_msmnile.xml"],
     srcs: ["service.cpp", "FingerprintInscreen.cpp"],
     vendor: true,
     shared_libs: [
