@@ -60,22 +60,6 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        # Fix xml version
-        product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml | product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml)
-            sed -i 's|xml version="2.0"|xml version="1.0"|g' "${2}"
-            ;;
-        # Move telephony related packages to /system_ext
-        system_ext/etc/permissions/embms.xml)
-            sed -i 's|/product/framework/embmslibrary.jar|/system/system_ext/framework/embmslibrary.jar|g' "${2}"
-            ;;
-        # Move telephony related packages to /system_ext
-        system_ext/etc/permissions/qcrilhook.xml)
-            sed -i 's|/product/framework/qcrilhook.jar|/system/system_ext/framework/qcrilhook.jar|g' "${2}"
-            ;;
-        # Move telephony related packages to /system_ext
-        system_ext/etc/permissions/telephonyservice.xml)
-            sed -i 's|/system/product/framework/QtiTelephonyServicelibrary.jar|/system/system_ext/framework/QtiTelephonyServicelibrary.jar|g' "${2}"
-            ;;
     esac
 }
 
