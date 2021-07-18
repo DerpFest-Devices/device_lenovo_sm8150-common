@@ -172,16 +172,13 @@ PRODUCT_PACKAGES += \
     init.qti.chg_policy.sh \
     init.qti.dcvs.sh \
     init.qti.qcv.sh \
-    init.lenovo.common.rc \
     init.lenovo.rc \
-    init.lenovo.usb.configfs.rc \
-    init.msm.usb.configfs.rc \
     init.qcom.factory.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
-    init.recovery.qcom.rc \
+    init.qti.ufs.rc \
+    init.set_kptr.rc \
     init.target.rc \
-    init.qcom.performance.rc \
     ueventd.qcom.rc
 
 # Device-specific settings

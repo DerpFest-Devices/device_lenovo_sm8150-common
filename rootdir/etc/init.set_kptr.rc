@@ -1,0 +1,4 @@
+# USER build need kptr_restrict = 0
+#set kptr_rstirct to 0
+on early-init
+    write /proc/sys/kernel/kptr_restrict 0

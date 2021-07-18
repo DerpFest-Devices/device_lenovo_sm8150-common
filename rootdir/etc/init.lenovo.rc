@@ -1,14 +1,18 @@
+import init.set_kptr.rc
+
 on post-fs
     #goodix
     chown system system /dev/goodix_fp
     chmod 666 /dev/goodix_fp
+    chown system system /sys/class/dsi_hbm/hbm/enable
+    chown system system /sys/class/backlight/panel0-hbm/brightness
     chown audioserver audio /sys/bus/i2c/devices/2-0034/reg
     chown audioserver audio  /sys/bus/i2c/devices/2-0034/rw
 
 on init
-    # permission for dt2w
-    chown system system /sys/devices/virtual/touch/tp_dev/gesture_on
-    chmod 0660 /sys/devices/virtual/touch/tp_dev/gesture_on
+#added touch gesture wake node permission
+    chown system /sys/devices/virtual/touch/tp_dev/gesture_on
+    chown system /sys/devices/virtual/touch/tp_dev/touch_key
 
 # Add factest service
 service factest /vendor/bin/factest
@@ -49,3 +53,8 @@ on boot
 
 on boot
    mkdir /mnt/vendor/persist/tof 0775 system system
+
+# Factory reset start
+#on property:vendor.wipe_data=1
+#    factory_data_misc
+# Factory reset end
