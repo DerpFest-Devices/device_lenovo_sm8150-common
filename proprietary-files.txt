@@ -515,19 +515,19 @@ vendor/bin/hw/vendor.zui.hardware.ifaa@1.0-service|fcd86eb795fc3876f95dddcdaba72
 vendor/etc/init/vendor.zui.hardware.ifaa@1.0-service.rc|7f1e142b46e4c83d4c0e5a98ce9e9f313611d99a
 vendor/lib64/vendor.zui.hardware.ifaa@1.0.so|f0a41f2ad068922a43585c0b9099b22bcbd558e5
 
-# IPA Firmware
-vendor/firmware/ipa_fws.b00
-vendor/firmware/ipa_fws.b01
-vendor/firmware/ipa_fws.b02
-vendor/firmware/ipa_fws.b03
-vendor/firmware/ipa_fws.b04
-vendor/firmware/ipa_fws.elf
-vendor/firmware/ipa_fws.mdt
-vendor/firmware/ipa_uc.b00
-vendor/firmware/ipa_uc.b01
-vendor/firmware/ipa_uc.b02
-vendor/firmware/ipa_uc.elf
-vendor/firmware/ipa_uc.mdt
+# IPA Firmware - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+vendor/firmware/ipa_fws.b00|27a002d0b54085560b38805fb940d6b960707a48
+vendor/firmware/ipa_fws.b01|c5dd56563545ae28876e29bbc7cab69f774038cc
+vendor/firmware/ipa_fws.b02|d6fe0e71d363af74132569d85e9dc6e5d9cc1800
+vendor/firmware/ipa_fws.b03|c07cfef57f8f694b4cee41e78700614efbedf2bc
+vendor/firmware/ipa_fws.b04|e3552692a635dceca369cab6d9349091b669c80a
+vendor/firmware/ipa_fws.elf|91e2444dc2574e3a8f351dfff6dc53cd13beedc5
+vendor/firmware/ipa_fws.mdt|5b468919ac41435b19d25a3aa063167e5d48e0df
+vendor/firmware/ipa_uc.b00|eb39c03229e8aa6b98d85dedddcd6578d7bc8595
+vendor/firmware/ipa_uc.b01|100f6fd48348c4507984e83ead616669a5eeab7c
+vendor/firmware/ipa_uc.b02|3b10a38f61f127c190649d7cbf8ae508c797e924
+vendor/firmware/ipa_uc.elf|c260d24717fcad2bf673ae2cfa7fdfea8d25c548
+vendor/firmware/ipa_uc.mdt|c0e99a9aa55b15862073a873fb0c65f54f7e42c7
 
 # Keymaster - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|cce8913b8bdbdf0e50f5fdecd47823a11330534b
