@@ -162,7 +162,6 @@ PRODUCT_PACKAGES += \
     init.mdm.sh \
     init.qcom.class_core.sh \
     init.qcom.coex.sh \
-    init.qcom.crashdata.sh \
     init.qcom.early_boot.sh \
     init.qcom.efs.sync.sh \
     init.qcom.post_boot.sh \
@@ -170,8 +169,9 @@ PRODUCT_PACKAGES += \
     init.qcom.sensors.sh \
     init.qcom.sh \
     init.qcom.usb.sh \
-    init.qti.fm.sh \
-    init.qti.ims.sh \
+    init.qti.chg_policy.sh \
+    init.qti.dcvs.sh \
+    init.qti.qcv.sh \
     init.lenovo.common.rc \
     init.lenovo.rc \
     init.lenovo.usb.configfs.rc \
