@@ -134,10 +134,9 @@ function configure_memory_parameters() {
     # Set allocstall_threshold to 0 for all targets.
     #
 
-ProductName=`getprop ro.product.name`
 low_ram=`getprop ro.config.low_ram`
 
-if [ "$ProductName" == "msmnile" ] || [ "$ProductName" == "kona" ] || [ "$ProductName" == "sdmshrike_au" ]; then
+if [ "$target" == "msmnile" ] || [ "$target" == "kona" ] || [ "$target" == "sdmshrike_au" ]; then
       # Enable ZRAM
       configure_zram_parameters
       echo 0 > /proc/sys/vm/page-cluster
