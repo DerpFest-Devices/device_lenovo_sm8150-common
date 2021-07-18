@@ -179,6 +179,7 @@ PRODUCT_PACKAGES += \
     init.qti.ufs.rc \
     init.set_kptr.rc \
     init.target.rc \
+    init.qcom.performance.rc \
     ueventd.qcom.rc
 
 # Device-specific settings

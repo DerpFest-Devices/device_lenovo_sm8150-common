@@ -1,0 +1,32 @@
+on early-init
+    # Disable EAS
+    write /sys/kernel/debug/sched_features NO_ENERGY_AWARE 
+
+on init
+    # Disable UFS powersaving
+    write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkgate_enable 0
+
+    # Disable powersaving
+    write /sys/module/lpm_levels/parameters/sleep_disabled 1
+
+    # configure governor settings for little cluster
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor schedutil
+
+    # configure governor settings for big cluster
+    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor schedutil
+
+    # configure governor settings for big big CPU
+    write /sys/devices/system/cpu/cpu7/cpufreq/scaling_governor schedutil
+
+on property:sys.boot_completed=1
+    # Enable powersaving
+    write /sys/module/lpm_levels/parameters/sleep_disabled 0
+
+    # Enable UFS powersaving
+    write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkgate_enable 1
+
+    # Enable EAS
+    write /sys/kernel/debug/sched_features ENERGY_AWARE
+
+    #Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1 
