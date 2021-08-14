@@ -25,4 +25,7 @@
 
     <!-- FPSInfoService FPS node file path -->
     <string name="config_fpsInfoSysNode" translatable="false">/sys/class/drm/sde-crtc-0/measured_fps</string>
+
+    <!-- Show the network traffic monitor on statusbar even if the device has a notch -->
+    <bool name="config_forceShowNetworkTrafficOnStatusBar">true</bool>
 </resources>
