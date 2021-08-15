@@ -1,6 +1,6 @@
 # All unpinned blobs below are extracted from L78051_SECURE_USER_11.5.381_ST_200603
 
-# ACDB data - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# ACDB data - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/etc/acdbdata/adsp_avs_config.acdb|cb17f8a86e584e82480a91b39c84db1bacf4e933
 vendor/etc/acdbdata/CDP/CDP_Bluetooth_cal.acdb|b971db5c48e3bd49b01f98a58baaf27e6d198b33
 vendor/etc/acdbdata/CDP/CDP_Codec_cal.acdb|340ecb228d69acf4b59c5f06d42a4e714bfcd0bd
@@ -30,14 +30,14 @@ vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb|70d149e2d587f727bc53048db7ecffe94da
 vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb|0b7e79748bc4fa5e22c2104752f11dbdb929ef21
 vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp|bd2d171c2275d31f00e80634011901afb13fd818
 
-# ADSP - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# ADSP - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/bin/adsprpcd|b736b00857d64e74a3b9be887215124d186f95d5
 vendor/etc/init/vendor.qti.adsprpc-service.rc|54588df8e7da58c66838028d2284986b966c2d37
 vendor/lib/vendor.qti.hardware.dsp@1.0.so|e553aafebc4b5f2908fc03f29b086cd1261aa454
 vendor/lib64/libadsp_default_listener.so|0324e797f6fdd15680df7fdacc51f713e40b9806
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so|5f30d9c5fff738e6194a36a5b93372fa32ec0471
 
-# ADSP Modules - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# ADSP Modules - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so|59cbdf5d84ba2ff64014941f3ad9e6c2c35e2c06
 vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so|e25f1087edc95d2ff76c1e37787ca37aae2cf175
 vendor/lib/rfsa/adsp/libapps_mem_heap.so|1cdac354c585c0d236d77b0888ebd5894b333326
@@ -57,12 +57,12 @@ vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc1
 vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so|eff059c5a29a44d205bd60ad24aecc46416e939e
 vendor/lib/rfsa/adsp/libVC1Dec.so|732ede3ede9e6e1b09c439156f62a07d8fa0ee3e
 
-# ANT+ - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# ANT+ - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 system_ext/lib/com.qualcomm.qti.ant@1.0.so|7f0a30f717a591ce16785a1ac1973cc0e1830111
 system_ext/lib64/com.qualcomm.qti.ant@1.0.so|1860cfe896871694dae434daebf04927fde6347e
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so|b5c57fdf48447c68b6308fdcb167d0d21b5c56ed
 
-# Audio libraries - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Audio libraries - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/lib/soundfx/libasphere.so|e5b0484dd81b124e5f82cae2355a74302e81291c
 vendor/lib/soundfx/libqcbassboost.so|9c6f925a8170f7d4a4456ea35c7a428aeeca4750
 vendor/lib/soundfx/libqcreverb.so|5720f19a3797dadd66251930f25cf60ff9f53e6a
@@ -89,13 +89,13 @@ vendor/lib64/hw/audio.primary.msmnile.so|c9accecf70d0aa67690a62ece4dc91672edc4c5
 vendor/lib64/libadsprpc.so|2479ecaa940db3e48368e0614f562af11e559cf2
 vendor/lib64/libclimax.so|15ec2426fc9ff5523726100ba598f1ca876683fd
 
-# Bluetooth - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Bluetooth - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|275aeb202001803c6bd6d632bf7958c8775468ad
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|7dd3049afc807bc50629bd2eb69154234e2b5f22
 vendor/lib64/libbtnv.so|07e031527e60ce5e62a5017fd1d7ff83ef1aafcf
 
-# Bluetooth (A2DP) - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Bluetooth (A2DP) - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/lib/hw/audio.bluetooth_qti.default.so|56d9d4cde6df8b066fc84f509e4dad9fe9c7c255
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|cdc97c1e06642d39d49ec055a86896cf1bd3b4c1
 vendor/lib/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|61c91107a4032634f1520340e75f015e44fd8dbc
@@ -119,7 +119,7 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|1671815a79dab0fde9248d0851
 system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
 
-# CDSP - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# CDSP - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/bin/cdsprpcd|8f541eab74d52bff8d73f7f280e085c4bf706e99
 vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
 vendor/lib/libcdsp_default_listener.so|3af8e9fbe0b154574ac0a709d1af401960922471
@@ -136,7 +136,7 @@ vendor/lib64/libmdsprpc.so|3b43e8da9111e4171b165e6015866c495df095a5
 vendor/lib64/libsdsprpc.so|0a5fb6c179d65da6f330163e6097ebd396c36427
 vendor/lib64/libsysmon_cdsp_skel.so|e5ba4d173b0e09d736b16474ed2f57874cb91916
 
-# Charger - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Charger - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/bin/hvdcp_opti|9399f40c1663eaeb618a2103057a9112f04fc712
 
 # CNE - from NX627J - nubia/NX627J/NX627J:11/RKQ1.200826.002/nubia.20210129.161619:user/release-keys
@@ -221,7 +221,7 @@ vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so|e039cd57df22cd762f7054b0f2ffe
 vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so|5a045ddcfe58845e0f0a447b4a0ecf5b29a56b64
 vendor/lib64/vendor.qti.latency@2.0.so|c4de1ba004bd8d07dbe92f58abb6250c7bbaf968
 
-# Configstore - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Configstore - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|8a64779e1a5df5153f10871cf23c65c3f7f94ae7
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede0250585a44b01d351bbc301d7a13cc3d783d
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|eb1a99915765fca7add8de87d7c4ef9bf031e155
@@ -281,7 +281,7 @@ vendor/etc/qdcm_calib_data_td4328_video_mode_dsi_truly_panel.xml
 vendor/etc/qdcm_calib_data_td4330_cmd_mode_dsi_truly_panel.xml
 vendor/etc/qdcm_calib_data_td4330_video_mode_dsi_truly_panel.xml
 
-# DPM - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# DPM - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 system/framework/tcmclient.jar|cdd1ea7143a5a7acc3909b5cfa706650179647c7
 system_ext/bin/dpmd|0f22b5229c85007681abd3f6d81a41a7f32462a7
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
@@ -354,14 +354,14 @@ vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff1906
 vendor/lib64/libwvhidl.so|68d257f6c4b409f71f80c231789d9951f71308a8
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
 
-# ESE - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# ESE Powermanager - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service|0de9474912b1206cfe17459afca9ebb28bdd2468
 vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc|3c024c7135ec3dd8658624509ee61396a74f1ede
 vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so|17f648402c874e4f981caadd91438a525089e35d
 vendor/lib64/vendor.qti.esepowermanager@1.0.so|a114629809e67015a14e5e367c6fb374adaafbc2
 vendor/lib64/vendor.qti.esepowermanager@1.1.so|f111cf42439d28fe88d9ebf6b6a1c44b729a3194
 
-# Fingerprint - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Fingerprint - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service|92d8c639935ad51fdd3a0d062ccb348351d1a30b
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc|a074aa25cbb5e7aab9d2b8cabea56992632ab685
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so|6e6c55128d28b7e888c8d7b7b0ceee7838c14b13
@@ -371,7 +371,7 @@ vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so|adc2ba89c49
 vendor/lib64/vendor.goodix.extend.service@2.0.so|f339ed26b85113b281553a9115e731eeccd49f15
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|768ffa49f8438fe2f978a6f6288bb0e3d5cde269
 
-# FM - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# FM - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 product/lib/vendor.qti.hardware.fm@1.0.so:system_ext/lib/vendor.qti.hardware.fm@1.0.so|7b797634343736613bc7e447c7864b226a54014d
 product/lib64/vendor.qti.hardware.fm@1.0.so:system_ext/lib64/vendor.qti.hardware.fm@1.0.so|4a2522113d6b737a87d3b43233f1afa94d9e45ad
 system/lib/fm_helium.so:system_ext/lib/fm_helium.so|3134029a5de146bd722055ed20165b104bb60bd1
@@ -384,7 +384,7 @@ vendor/lib/vendor.qti.hardware.fm@1.0.so|ec14a34ecae5061d674283499a812374c8be4ce
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|f74f7df9f4ababb1e54c5ab49b3ce60728192848
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|17e86e9a2054db733d955fcf1066f6e06a44fb21
 
-# Gatekeeper - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Gatekeeper - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|de1e8d026b16255040dbe6eb67faa73c9b656553
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|74ff564ec413866644361401ef5cf8d55846ead5
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so|1dcf731eb554eb5a84d51e8aae7a6dff61780318
@@ -392,13 +392,13 @@ vendor/lib/libqcbor.so|6f90ae6aee92a4a09b34432cb6b95dc1977f4772
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|9042059c28de1ed06f6e0795b6d7ee9bb9d939ab
 vendor/lib64/libqcbor.so|df6a3f00d7d49e482e0ca2937f5bd708fba32ae6
 
-# GPS - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# GPS - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti|d458a2aadc1d00df4696d6793e550f4a9422a2c9
 vendor/bin/garden_app|3d55864b18d1b1a27eb980144a8db51c54d74238
 vendor/bin/loc_launcher|c9a2f764201ee679c29463f405abd9625c421afc
 vendor/bin/lowi-server|acbe58833160c246b211065169752404f64c08ec
 vendor/bin/mlid|d869b298fad44df834567dab3c0ab6bb78996e28
-vendor/bin/slim_daemon|a4f95d3ad758f0d0774d6d76614d136c0d488213
+vendor/bin/slim_daemon|f3c43ab880a5d2c2a3bea3610aafbefe46d48bef
 vendor/bin/xtra-daemon|f9e77c629c9de5a188b773188ae96c9a595d7360
 vendor/bin/xtwifi-client|86d1b65370ec8d6bb44f126005b13bed02459543
 vendor/bin/xtwifi-inet-agent|f805841e5c8ca3b0af620486a64a37148daa0980
@@ -447,7 +447,7 @@ vendor/lib64/vendor.qti.gnss@4.0-service.so|3c75d133af5193436167380aa89abcf05d07
 vendor/lib64/vendor.qti.gnss@4.0.so|7d343c73e6720434045cc38ea0e570ae9d03cd51
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|19a1f7ffb8118c207aa8cb2318996605771c339a
 
-# Graphics (Adreno) - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Graphics (Adreno) - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 -vendor/app/com.qualcomm.qti.gpudrivers.msmnile.api30/com.qualcomm.qti.gpudrivers.msmnile.api30.apk;PRESIGNED|48806ee3413a591ab35a262b3c0f88fd8ea85fbf
 vendor/lib/egl/eglSubDriverAndroid.so|70f2c481e24a42c9e899719a7de11fc45f31eb80
 vendor/lib/egl/libEGL_adreno.so|a1ebde8802bddd24745983dbd5a81a520afaf5c3
@@ -482,7 +482,7 @@ vendor/lib64/libllvm-qcom.so|05d5103b81aefcc12ddf5de841ddf0df2ae88ad1
 vendor/lib64/libOpenCL.so|8c8489db818c4089459574090d6111db4e0802d0
 vendor/lib64/libVkLayer_q3dtools.so|ee5f04c4847dcdf9816bde46380746f9bc0580ed
 
-# Graphics (Adreno firmware) - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Graphics (Adreno firmware) - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/firmware/a630_gmu.bin|32bb4acc7767c47ddb487ed7cb998d465ee462f2
 vendor/firmware/a630_sqe.fw|e25094f97b44244775cc38a9d909fba6bd4cf76b
 vendor/firmware/a640_gmu.bin|fb1eab0dd5f313abf31441e2209c9398da7df98b
@@ -492,7 +492,7 @@ vendor/firmware/a640_zap.b02|991903c32e25c8224cac3ed74009b65a291fbb5f
 vendor/firmware/a640_zap.elf|cac93211c1a666416bba734a2312d60c240a118f
 vendor/firmware/a640_zap.mdt|203b6a2c2c8b32b4b1cc9c8fdc43b661f8681d69
 
-# Graphics (Vulkan) - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Graphics (Vulkan) - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/lib/hw/vulkan.adreno.so|040b1bfaa025c0eae3a69df306f0567ea6fe1960
 vendor/lib64/hw/vulkan.adreno.so|dbe08047ec51224d63645180673eb7db1db2a004
 
@@ -510,26 +510,34 @@ vendor/lib64/libhbtpfrmwk.so
 # Input
 system/etc/excluded-input-devices.xml
 
-# IFAA - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# IFAA - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/bin/hw/vendor.zui.hardware.ifaa@1.0-service|fcd86eb795fc3876f95dddcdaba7287daca8944c
 vendor/etc/init/vendor.zui.hardware.ifaa@1.0-service.rc|7f1e142b46e4c83d4c0e5a98ce9e9f313611d99a
 vendor/lib64/vendor.zui.hardware.ifaa@1.0.so|f0a41f2ad068922a43585c0b9099b22bcbd558e5
 
-# IPA Firmware - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# IO Prefetcher - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
+vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|f44b5e1dda355fe2f99ccaaf3860f4f443d38b22
+vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc|fd11367b2585702190ef2577ce2ce6fc68f3a2f8
+vendor/lib64/libqti-iopd-client.so|512e12a6a86eb2dc5ad73a590c996d0e67e2ec1a
+vendor/lib64/libqti-iopd.so|2b73fcad0d5562e0cf1677fefddd8c819788b64d
+vendor/lib64/vendor.qti.hardware.iop@1.0.so|ab7e9d16481a52a919cd7484eed480913ce29e66
+vendor/lib64/vendor.qti.hardware.iop@2.0.so|a99da96aa7abf8b9a4cb950113d7fe4ccbe4ff6c
+
+# IPA Firmware - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/firmware/ipa_fws.b00|27a002d0b54085560b38805fb940d6b960707a48
-vendor/firmware/ipa_fws.b01|c5dd56563545ae28876e29bbc7cab69f774038cc
+vendor/firmware/ipa_fws.b01|f0f1edc3ae69c6835720fd3d3b5856ec33255c71
 vendor/firmware/ipa_fws.b02|d6fe0e71d363af74132569d85e9dc6e5d9cc1800
 vendor/firmware/ipa_fws.b03|c07cfef57f8f694b4cee41e78700614efbedf2bc
 vendor/firmware/ipa_fws.b04|e3552692a635dceca369cab6d9349091b669c80a
-vendor/firmware/ipa_fws.elf|91e2444dc2574e3a8f351dfff6dc53cd13beedc5
-vendor/firmware/ipa_fws.mdt|5b468919ac41435b19d25a3aa063167e5d48e0df
+vendor/firmware/ipa_fws.elf|725822f1c523c9f6d1dd3296f5105e58f9987b5d
+vendor/firmware/ipa_fws.mdt|96a73593f20afb1314bc736f15a52e85cc064d00
 vendor/firmware/ipa_uc.b00|eb39c03229e8aa6b98d85dedddcd6578d7bc8595
-vendor/firmware/ipa_uc.b01|100f6fd48348c4507984e83ead616669a5eeab7c
+vendor/firmware/ipa_uc.b01|f067d2bfa139edba1b5194b86623ca995a6a89c8
 vendor/firmware/ipa_uc.b02|3b10a38f61f127c190649d7cbf8ae508c797e924
-vendor/firmware/ipa_uc.elf|c260d24717fcad2bf673ae2cfa7fdfea8d25c548
-vendor/firmware/ipa_uc.mdt|c0e99a9aa55b15862073a873fb0c65f54f7e42c7
+vendor/firmware/ipa_uc.elf|ac957f597aec4d3a92e5c5e25a69abacaf2318d6
+vendor/firmware/ipa_uc.mdt|e25dc89aaa1fe60c17ebe5ec09e05add02599fe2
 
-# Keymaster - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Keymaster - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|cce8913b8bdbdf0e50f5fdecd47823a11330534b
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|b361b15b60da3185c196c85abdab6646e4d7d4f8
 vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti|43e18dd04793654da2749620de8dce115f545a4c
@@ -568,7 +576,7 @@ vendor/lib64/liblistensoundmodel2.so
 vendor/lib64/libmulawdec.so
 vendor/lib64/libjnihelper.so
 
-# Media - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Media - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 system_ext/lib/libmmosal.so|16d59ee5fa26ce20132284bc2c862c9b842e2ee2
 system_ext/lib/libmmparser_lite.so|617299c8138340909cee5d11a462b9c07e343747
 system_ext/lib64/libmmosal.so|ef19a38be8283c87eabe96f74bc8a71881ab1f0a
@@ -592,7 +600,7 @@ vendor/lib64/unnhal-acc-common.so|79fd66d6a86395b95f64423f968c3d4126630477
 vendor/lib64/unnhal-acc-hta.so|2c19cdff7531b8850dac8a305b6d940129d2e85d
 vendor/lib64/unnhal-acc-hvx.so|3c8f0043ef20d9555dfb6da2578043c0b3923a6f
 
-# OMX - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# OMX - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/lib/libAlacSwDec.so|e49062c9fd9377e8264bf8f7901394653b9f02dc
 vendor/lib/libApeSwDec.so|f14f08a55b32cc252417e3970b1d2cb296d48fa0
 vendor/lib/libdsd2pcm.so|427be2997fcd72e94c33d08b2cf1fde5bf969fd4
@@ -635,16 +643,40 @@ vendor/lib64/libOmxVpp.so|ac1fe4cdd11dd9238d57891710815be40a5a0284
 vendor/lib64/libOmxWmaDec.so|05167609907a265b6d0e86294811c6b02def23a8
 vendor/lib64/libswvdec.so|888b704def0068f0ec882aa5227ba78bec56d522
 
-# Perf - IRQ Balance - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Perf - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
+vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|6b8f077dc724a202f3fc91c0255f88ad45cbdb62
+vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
+vendor/etc/perf/commonresourceconfigs.xml|827c63cb52552af0c19a4735430f98334e1760bf
+vendor/etc/perf/perfboostsconfig.xml|93e57b38e327bfbc174e925d639745e66949229b
+vendor/etc/perf/perfconfigstore.xml|62f780c6f974a62d18a66d0dcee30efb04903512
+vendor/etc/perf/targetconfig.xml|95f511bb4030b2755a0b340814fe41cccac994ab
+vendor/etc/perf/targetresourceconfigs.xml|bcac95b779250981197349f926a84b67e649aa2f
+vendor/etc/powerhint.xml|f35137c8f5068d03bba832b995e3e89b1ad718c2
+vendor/lib/libperfconfig.so|bbecdc5b9f72f5aac80caed31079336cc41e6234
+vendor/lib/libperfgluelayer.so|52cf265b9dab53f798c8c48c70eee763e9543085
+vendor/lib/libperfioctl.so|42789bf7d53750d33f501a130e47e596332744fc
+vendor/lib/libqti-perfd-client.so|1b0c70391d684ad95c79bc24ecb5ac8096d39019
+vendor/lib/libqti-perfd.so|a145dbd5108dfc9c827a482b9359132bfa0660c5
+vendor/lib/libqti-util.so|0fc209bb65b08ea39177fa9dd61db9a9bfe6c754
+vendor/lib64/liblearningmodule.so|14f21c80b7dbb735cc2357ec8cd8ae9ea41801a5
+vendor/lib64/libmeters.so|d5c9a4605bd2f631d6b0eb3c3cbb1f5fb8629114
+vendor/lib64/libperfconfig.so|082055646d2fffcf0120d23ca152d56c903ebd41
+vendor/lib64/libperfgluelayer.so|77c14d1868b52f759f122441b5df7e5fe1e278e1
+vendor/lib64/libperfioctl.so|7bf289a68671f675ded7fb62e561e59832983138
+vendor/lib64/libqti-perfd-client.so|d6502c16ab4dd7642641b6a8cbb061847ff5cb2d
+vendor/lib64/libqti-perfd.so|2a30ad97973e17694b897c09b5b293c96cbcbab0
+vendor/lib64/libqti-util.so|834cc98315887e57a5f229f9ee1a0d20d0d8f4c3
+
+# Perf - IRQ Balance - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/bin/msm_irqbalance|c0910fb319bb8287f176f26078241299455baad0
 
-# Peripheral manager - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Peripheral manager - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/bin/pm-proxy|a9ed48eb4738a848a1f73ca7873a35023eac6463
 vendor/bin/pm-service|103510ce9cc410d4f9ee57481d6acbde5a70418a
 vendor/lib64/libperipheral_client.so|8cb65f4c93719767048dd7b1b845473fe6074ff7
 vendor/lib64/libspcom.so|c7d36d8fc648d8239e95ed30980b524d0f6a07d8
 
-# Power-off alarm - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Power-off alarm - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 -product/app/PowerOffAlarm/PowerOffAlarm.apk|5dd40dcc10d5dad8467c8931df23bab48aea0517
 system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar|6508f5708221399eb8bd9754dc49bad32a911e27
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|6f58edbe898a0582b02b688ec8a47a57a50707ec
@@ -660,7 +692,7 @@ vendor/etc/permissions/vendor.qti.hardware.factory.xml
 vendor/lib64/vendor.qti.hardware.factory@1.0.so
 vendor/lib64/vendor.qti.hardware.factory@1.1.so
 
-# Qualcomm MSM Interface - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Qualcomm MSM Interface - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 system_ext/etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
 system_ext/etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
 vendor/bin/irsc_util|c2cb91666e88000df258730cd4a0a81a207a2704
@@ -699,12 +731,12 @@ vendor/lib/libqmi_csi.so|f894b371222abc94d759bb0260bcb44f3b067bee
 vendor/lib/libqmi_encdec.so|42f1d3da38170a5a69edaeb459db8425f455c625
 vendor/lib/libqmiservices.so|4b8aece94c02b56474b6044e4bdef749a4d91822
 
-# Radio - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Radio - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 -system_ext/app/DeviceInfo/DeviceInfo.apk|33d0cf5674dd5c7e3e2e29b12edae975520391d7
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk|21a438232aab48c52360c1beb81bec21572aff73
 -system_ext/app/datastatusnotification/datastatusnotification.apk|ab99cf9ce12d665c82240b4a46b8fa6aeb187f24
 -system_ext/app/embms/embms.apk|e7143c0409d6df1fc7ffe679c2506d902ef85a3b
--system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|ac9423b0845a9dd738e1cf0216334acb24484848
+-system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|2686a0adb3bb718615eb24e3ba7afe308e7eb0d9
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml|42f4553b61731e56d253766554d4479519cea3ff
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|4f0056403f56928b8c75a617ba582f17061f89ae
 system_ext/etc/permissions/embms.xml|22e7474091f9f71f02dd0cfc76cfa8848a46f079
@@ -789,7 +821,7 @@ vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql|fcb2cba3bfd71
 vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql|0fdf4b6ccb48906b37885e060429f79c9fd6bdbf
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql|9a76d5747da2876b87b214579c9d74ae92d218d7
 
-# Radio_IMS - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Radio_IMS - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice.xml|db25ef24f1937366d58a53b4f4b8923bc9e98d2d
 -system_ext/app/imssettings/imssettings.apk|173f246aca91777822e15c44c6f1210f9a9e32f7
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml|bd9fc166b542b4e730f194ebc996957770d9d497
@@ -867,7 +899,7 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so|dee439bc54d7708685fcb69848d3d6471c2
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so|25517caf74691b812320b46b477a3f4161cc1bcf
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so|e63891d94ccc16edb0d276803202e843e62e8832
 
-# Sensors - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Sensors - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service|475fab7f88c20b9cf3f470e337ed5fc576815774
 vendor/bin/sensors.qti|9bc2951cb76e6695830d58f0e0ceb66b0aca5f64
 vendor/bin/sscrpcd|40e81550192748f07810d92fc6002597a20bf0e3
@@ -902,7 +934,7 @@ vendor/lib64/libssc_default_listener.so|d4dffb70de26f4ffe1a9c467b9d5f6c8cfaad045
 vendor/lib64/sensors.ssc.so|47e0c68ce06b91b94e0f0ef9a16da79d260684a0
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|f45c18014542796af2e2be301bb0dd9100c7106e
 
-# Sensor configs - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Sensor configs - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/etc/sensors/hals.conf|bf3677cbfa5ce5735662e8c259cb027969f65c87
 vendor/etc/sensors/sns_reg_config|891e6e552b64c29b61744dd53ea373ea0ce0aa40
 vendor/etc/sensors/config/msmnile_ak991x_0_zippo.json|0a853242fe95e70ab24f083b97fec7034da60473
@@ -1036,7 +1068,7 @@ vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto|f35ad5c8ade4f36caa9a71dff2
 vendor/etc/sensors/proto/sns_zuk_patpat.proto|7fc9fa85260216c213556bf1555914a5a4968114
 vendor/etc/sensors/proto/sns_zuk_pickup.proto|f7217f9c7dac02fca8d07b8057964756b7d766e9
 
-# Snapdragon Computer Vision Engine - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Snapdragon Computer Vision Engine - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/lib/libfastcvdsp_stub.so|6ccfd797a035075db44aaf288a87d1eb041288b7
 -vendor/lib/libfastcvopt.so|b8ab7d9eaf6fc945463d738c15ffde7edf025045
 vendor/lib/libscveCommon.so|7197212884b6e49f243ad3f50b94f76a6812020d
@@ -1063,19 +1095,19 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
-# Thermal - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Thermal - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/bin/thermal-engine|bacf88c801ba037e1e1d2671937404184eb8964b
 vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
 vendor/lib/libthermalclient.so|196acc1aaae1810ea9ba56bf9e1bb9ee2e486f6a
 vendor/lib64/libthermalclient.so|8f2411404f56c6d15e6a185124bbc7f8c2adf195
 
-# Time services - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Time services - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 -vendor/app/TimeService/TimeService.apk|fae6f026bfb736e715c3e0ec07408a6e7162a066
 vendor/bin/time_daemon|e62d164b8c8b30743837896d4c5e8bca39b364e6
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 vendor/lib64/libtime_genoff.so|3f57de1aeb7aa113a0a579cebed85ab4405b9b49
 
-# Trusted Execution Environment connector - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Trusted Execution Environment connector - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|f8dc88c7166ffc2c1d997e7d5f16a8eb69c37cfc
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
 vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|f7b9b7baafeb6b822df3e8ee584afe856885684f
@@ -1084,12 +1116,12 @@ vendor/lib64/libGPTEE_vendor.so|a8896a022e2b977997a40be9c584ff778d25c0f9
 vendor/lib64/libQTEEConnector_vendor.so|62d8993f51e0d4a0c4d6ae2645512ddfc76577f3
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|29130d7b0050885a6b455390a02a8615563403c4
 
-# Trusted User Interface - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# Trusted User Interface - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|e8d97981d09a4e34907d13bcbbd10f03572c9218
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|960561ba01e28777e099294fb0a9a749e2b2a775
 
-# VPP - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# VPP - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/bin/vppservice|55039efdfcd2d837d76fff9b442470d10cffce89
 vendor/etc/configstore/vpp.configstore.xml|ed961545186c66fd9523f25866c74f2e11ee63d7
 vendor/etc/init/vppservice.rc|24c089e0e413cbb3fa6daaf0af4215870bdf1b8e
@@ -1108,7 +1140,7 @@ vendor/lib64/vendor.qti.hardware.vpp@1.1.so|f7769685d9c0c74f8c8419db028a5d5c3f65
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so|ca1906012d0ab6dc9048aa49703833512308e6cf
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so|99f7054e5a0e9eb214e27cf034785bc446187e20
 
-# WiFi - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.262_210503:user/release-keys
+# WiFi - from zippo - Lenovo/zippo/zippo:11/RKQ1.200928.002/12.5.332_210716:user/release-keys
 vendor/bin/cnss-daemon|7814a62cc2e9d850d5a1ac24e1e1cc7e47851009
 vendor/bin/cnss_diag|83003caf2072d06b9b5246c345dad050273525d3
 
