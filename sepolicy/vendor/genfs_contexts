@@ -2,6 +2,6 @@ genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_state           
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_bl   u:object_r:sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_hbm  u:object_r:sysfs_graphics:s0
 
-genfscon debugfs /sched_features                                                u:object_r:debugfs_sched_features:s0
+genfscon proc /sys/kernel/sched_energy_aware                                    u:object_r:proc_sched_energy_aware:s0
 
 genfscon sysfs /devices/platform/soc/1d84000.ufshc/clkgate_enable               u:object_r:vendor_sysfs_scsi_host:s0

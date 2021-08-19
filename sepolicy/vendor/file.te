@@ -1,6 +1,8 @@
-type debugfs_sched_features, debugfs_type, fs_type;
 type sysfs_tp, fs_type, sysfs_type;
 type sysfs_vl53l1, sysfs_type, fs_type;
 type system_camera_file, file_type;
 type sysfs_kgsl, sysfs_type, fs_type;
 type sysfs_device_info, sysfs_type, fs_type;
+
+# for PowerHal
+type proc_sched_energy_aware, proc_type, fs_type;
