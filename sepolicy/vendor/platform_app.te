@@ -5,3 +5,6 @@ allow platform_app vendor_sysfs_battery_supply:dir { search };
 allow platform_app vendor_sysfs_kgsl:file { read open getattr ioctl };
 allow platform_app vendor_sysfs_battery_supply:file { read open getattr ioctl };
 allow platform_app default_android_hwservice:hwservice_manager find;
+
+allow platform_app hal_dms_hwservice:hwservice_manager find;
+allow platform_app hal_dms_default:binder { call transfer };
