@@ -29,8 +29,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-spark/lineage-sdk \
-    $(LOCAL_PATH)/overlay-spark/packages/apps/Snap
+    $(LOCAL_PATH)/overlay-spark/lineage-sdk
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
@@ -146,8 +145,7 @@ PRODUCT_PACKAGES += \
     libdng_sdk \
     libgui_vendor \
     libqti-perfd-client \
-    libxml2 \
-    Snap
+    libxml2
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libc++.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++.so
