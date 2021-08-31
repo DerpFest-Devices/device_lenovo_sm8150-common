@@ -138,6 +138,7 @@ vendor/lib64/libsysmon_cdsp_skel.so
 
 # Charger
 vendor/bin/hvdcp_opti
+vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 
 # CNE
 system_ext/framework/com.quicinc.cne.api-V1.1-java.jar|88da95df5925ab3c173f951cfe56c95699908359
