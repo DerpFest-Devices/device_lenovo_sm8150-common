@@ -1,3 +1,6 @@
+# Bluetooth
+vendor.bluetooth.soc                                            u:object_r:vendor_bluetooth_prop:s0
+
 # Camera
 persist.camera.arcsoft.                                         u:object_r:vendor_camera_prop:s0
 persist.camera.pandora.                                         u:object_r:vendor_camera_prop:s0
