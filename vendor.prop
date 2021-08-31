@@ -58,6 +58,7 @@ persist.vendor.qcom.bluetooth.twsp_state.enabled=false
 persist.vendor.qcom.bluetooth.scram.enabled=true
 persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false
 persist.vendor.bt.a2dp.aac_whitelist=false
+vendor.qcom.bluetooth.soc=cherokee
 
 # Boot
 sys.vendor.shutdown.waittime=500
