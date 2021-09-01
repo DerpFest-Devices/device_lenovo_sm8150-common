@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from L78051_SECURE_USER_12.5.332_ST_210716
+# All unpinned blobs below are extracted from L78051_CN_SECURE_USER_Q00055.1a_R_ZUI_12.5.365_ST_210831_WC79FCB81C
 
 # ADSP
 vendor/bin/adsprpcd
