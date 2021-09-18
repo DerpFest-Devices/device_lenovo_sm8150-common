@@ -912,10 +912,6 @@ service vendor.power_off_alarm /vendor/bin/power_off_alarm
     disabled
     oneshot
 
-# shenqi-framework, wangwq14, start vendor.power_off_alarm when shutdown charging.
-on property:debug.shutdown_charging=1
-    start vendor.power_off_alarm
-
 #service vendor.hbtp /vendor/bin/hbtp_daemon
 #     class main
 #     user system
