@@ -19,8 +19,15 @@
 
 #include <android-base/logging.h>
 #include <fstream>
+#include <thread>
+
+#include <fcntl.h>
+#include <poll.h>
+#include <sys/stat.h>
 
 #define CMD_FINGERPRINT_EVENT 10
+
+#define FOD_UI_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui"
 
 #define DIMLAYER_HBM_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_hbm"
 #define DC_DIM_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_bl"
@@ -43,9 +50,52 @@ static void set(const std::string& path, const T& value) {
     LOG(INFO) << "wrote path: " << path << ", value: " << value << "\n";
 }
 
+static bool readBool(int fd) {
+    char c;
+    int rc;
+
+    rc = lseek(fd, 0, SEEK_SET);
+    if (rc) {
+        LOG(ERROR) << "failed to seek fd, err: " << rc;
+        return false;
+    }
+
+    rc = read(fd, &c, sizeof(char));
+    if (rc != 1) {
+        LOG(ERROR) << "failed to read bool from fd, err: " << rc;
+        return false;
+    }
+
+    return c != '0';
+}
+
 BiometricsFingerprint::BiometricsFingerprint() {
     biometrics_2_1_service = IBiometricsFingerprint_2_1::getService();
     this->mVendorFpService = IGoodixFPExtendService::getService();
+
+    std::thread([this]() {
+        int fd = open(FOD_UI_PATH, O_RDONLY);
+        if (fd < 0) {
+            LOG(ERROR) << "failed to open fd, err: " << fd;
+            return;
+        }
+
+        struct pollfd fodUiPoll = {
+            .fd = fd,
+            .events = POLLERR | POLLPRI,
+            .revents = 0,
+        };
+
+        while (true) {
+            int rc = poll(&fodUiPoll, 1, -1);
+            if (rc < 0) {
+                LOG(ERROR) << "failed to poll fd, err: " << rc;
+                continue;
+            }
+
+            this->mVendorFpService->goodixExtendCommand(CMD_FINGERPRINT_EVENT, readBool(fd) ? 1 : 0);
+        }
+    }).detach();
 }
 
 Return<uint64_t> BiometricsFingerprint::setNotify(const sp<IBiometricsFingerprintClientCallback>& clientCallback) {
@@ -94,12 +144,10 @@ Return<bool> BiometricsFingerprint::isUdfps(uint32_t) {
 
 Return<void> BiometricsFingerprint::onFingerDown(uint32_t, uint32_t, float, float) {
     set(DIMLAYER_HBM_PATH, 1);
-    this->mVendorFpService->goodixExtendCommand(CMD_FINGERPRINT_EVENT, 1);
     return Void();
 }
 
 Return<void> BiometricsFingerprint::onFingerUp() {
-    this->mVendorFpService->goodixExtendCommand(CMD_FINGERPRINT_EVENT, 0);
     set(DIMLAYER_HBM_PATH, 0);
     return Void();
 }
