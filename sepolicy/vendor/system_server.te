@@ -1,1 +1,3 @@
- allow system_server default_android_hwservice:hwservice_manager find;
+allow system_server default_android_hwservice:hwservice_manager find;
+
+get_prop(system_server, vendor_display_notch_prop);
