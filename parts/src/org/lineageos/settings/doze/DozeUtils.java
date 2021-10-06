@@ -42,6 +42,7 @@ public final class DozeUtils {
 
     protected static final String CATEG_PICKUP_SENSOR = "pickup_sensor";
     protected static final String CATEG_PROX_SENSOR = "proximity_sensor";
+    protected static final String DOZE_ENABLE = "doze_enable";
 
     protected static final String GESTURE_PICK_UP_KEY = "gesture_pick_up";
     protected static final String GESTURE_SMART_WAKE_KEY = "gesture_smart_wake";
