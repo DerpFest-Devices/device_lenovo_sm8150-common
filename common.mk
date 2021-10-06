@@ -15,6 +15,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
+# HIDL 
+$(call inherit-product, $(LOCAL_PATH)/common-hidl.mk)
+
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/lenovo/sm8150-common/sm8150-common-vendor.mk)
 
