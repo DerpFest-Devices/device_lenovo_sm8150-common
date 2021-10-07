@@ -7,6 +7,7 @@
 BOARD_VENDOR := lenovo
 
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 DEVICE_PATH_COMMON := device/lenovo/sm8150-common
 
 # Architecture
