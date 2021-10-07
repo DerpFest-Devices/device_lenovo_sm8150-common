@@ -110,9 +110,6 @@ MAX_EGL_CACHE_SIZE := 2048*1024
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
-# Enforce native interfaces of product partition as VNDK
-PRODUCT_PRODUCT_VNDK_VERSION := current
-
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH_COMMON)/config.fs
 
