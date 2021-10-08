@@ -42,12 +42,20 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.0.vendor \
     android.hardware.gnss@2.1.vendor
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1.vendor \
+
 # NeuralNetworks
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor \
     android.hardware.neuralnetworks@1.2.vendor \
     android.hardware.neuralnetworks@1.1.vendor \
     android.hardware.neuralnetworks@1.0.vendor 
+
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.2.vendor \
 
 # RIL
 PRODUCT_PACKAGES += \
