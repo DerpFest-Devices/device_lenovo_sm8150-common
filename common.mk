@@ -334,17 +334,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
 
-# Perf
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.2.vendor
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/perf/perfboostsconfig.xml
-
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2.vendor \
-    android.hardware.power-service-qti
+    android.hardware.power@1.2.vendor
 
 # QMI
 PRODUCT_PACKAGES += \
