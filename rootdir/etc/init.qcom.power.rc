@@ -28,6 +28,9 @@
 on early-init
     write /proc/sys/kernel/sched_boost 1
 
+    # Disable EAS
+    write /sys/kernel/debug/sched_features NO_ENERGY_AWARE 
+
 on init
     # Boot time fs tuning
     write /sys/block/sda/queue/iostats 0
@@ -158,32 +161,21 @@ on enable-low-power
 
     # Turn off scheduler boost at the end
     write /proc/sys/kernel/sched_boost 0
+    
+    # configure governor settings for little cluster
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor schedutil
+    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us 20000
 
-	# configure governor settings for silver cluster
-    write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor schedutil
-    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us 0
-    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us 0
-    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq 1209600
-    write /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq 576000
-    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl 1
+    # configure governor settings for big cluster
+    write /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor schedutil
+    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us 20000
 
-    # configure governor settings for gold cluster
-    write /sys/devices/system/cpu/cpufreq/policy4/scaling_governor schedutil
-    write /sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us 0
-    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us 0
-    write /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_freq 1612800
-    write /sys/devices/system/cpu/cpufreq/policy4/schedutil/pl 1
-
-    # configure governor settings for gold+ cluster
-    write /sys/devices/system/cpu/cpufreq/policy7/scaling_governor schedutil
-    write /sys/devices/system/cpu/cpufreq/policy7/schedutil/up_rate_limit_us 0
-    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us 0
-    write /sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_freq 1612800
-    write /sys/devices/system/cpu/cpufreq/policy7/schedutil/pl 1
-
-    # configure input boost settings
-    write /sys/module/cpu_boost/parameters/input_boost_freq 0:1324800
-    write /sys/module/cpu_boost/parameters/input_boost_ms 120
+    # configure governor settings for big big CPU
+    write /sys/devices/system/cpu/cpu7/cpufreq/scaling_governor schedutil
+    write /sys/devices/system/cpu/cpu7/cpufreq/schedutil/up_rate_limit_us 500
+    write /sys/devices/system/cpu/cpu7/cpufreq/schedutil/down_rate_limit_us 20000
 
     # Disable wsf, beacause we are using efk.
     # wsf Range : 1..1000 So set to bare minimum value 1.
@@ -250,6 +242,15 @@ on enable-low-power
     # Enable UFS powersaving
     write /sys/devices/platform/soc/${ro.boot.bootdevice}/clkgate_enable 1
     write /sys/devices/platform/soc/${ro.boot.bootdevice}/hibern8_on_idle_enable 1
+
+    # Enable EAS
+    write /sys/kernel/debug/sched_features ENERGY_AWARE
+
+    #Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
+
+    # F2FS tuning: issue discard commands up to 128MB
+    write /sys/block/dm-7/queue/discard_max_bytes 134217728
 
     # Set allocstall_threshold to 0 for all targets.
     # Set swappiness to 100 for all targets
