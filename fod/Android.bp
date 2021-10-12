@@ -59,8 +59,8 @@ cc_binary {
 }
 
 cc_library_static {
-    name: "libfod_extension.lenovo_msmnile",
-    srcs: ["FodExtension.cpp"],
+    name: "libudfps_extension.lenovo_msmnile",
+    srcs: ["UdfpsExtension.cpp"],
     include_dirs: [
         "frameworks/native/services/surfaceflinger/CompositionEngine/include"
     ],
