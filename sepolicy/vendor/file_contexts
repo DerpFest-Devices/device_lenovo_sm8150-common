@@ -13,7 +13,6 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.lights-service\.lenovo_msmnile                                        u:object_r:hal_light_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.3-service\.lenovo_msmnile-libperfmgr                         u:object_r:hal_power_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.lenovo_msmnile                  u:object_r:hal_fingerprint_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.biometrics\.fingerprint\.inscreen@1\.0-service\.lenovo_msmnile          u:object_r:hal_fod_lenovo_msmnile_exec:s0
 
 # Sys files
 /sys/devices/platform/soc/[a-z0-9]+.qcom,spmi/spmi-[0-1]/spmi0-0[0-9]/[a-z0-9]+.qcom,spmi:qcom,[a-z0-9]+@[0-9]:qcom,leds@d000/leds(/.*)?            u:object_r:sysfs_leds:s0
