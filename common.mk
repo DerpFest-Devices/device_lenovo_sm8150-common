@@ -235,7 +235,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.lenovo_msmnile \
+    android.hardware.biometrics.fingerprint@2.3-service.lenovo_msmnile \
     vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.lenovo_msmnile
 
 # GPS
