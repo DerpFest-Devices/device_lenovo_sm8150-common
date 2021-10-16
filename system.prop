@@ -3,7 +3,6 @@
 audio.offload.min.duration.secs=30
 persist.vendor.audio.hac.enable=false
 ro.audio.monitorRotation=true
-ro.config.media_vol_steps=35
 
 # Bluetooth
 bt.max.hfpclient.connections=1

@@ -5,9 +5,6 @@
 /dev/goodix_fp                                                                                                          u:object_r:gx_fpd_device:s0
 /dev/stmvl53l1_ranging                                                                                                  u:object_r:vl53l1_device:s0
 
-# Dolby
-/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@1\.0-service                     				u:object_r:hal_dms_default_exec:s0
-
 # HALs
 /(vendor|system/vendor)/bin/hw/vendor\.zui\.hardware\.ifaa@1\.0-service                                                 u:object_r:hal_ifaa_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.lights-service\.lenovo_msmnile                                        u:object_r:hal_light_default_exec:s0

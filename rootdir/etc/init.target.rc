@@ -67,7 +67,7 @@ on post-fs-data
     mkdir /data/vendor/nnhal 0700 system system
     mkdir /data/vendor/dolby 0770 media media
 
-on boot
+on early-boot
     start vendor.sensors
 
 on boot
@@ -97,11 +97,6 @@ on boot
     setprop vendor.usb.dpl.inst.name "dpl"
     setprop vendor.usb.qdss.inst.name "qdss"
     setprop vendor.usb.controller a600000.dwc3
-
-on property:sys.boot_completed=1
-    # Restrict permissions to socket file 
-    # to hide Magisk & co.
-    chmod 440 /proc/net/unix
 
 on property:vendor.display.lcd_density=560
    setprop dalvik.vm.heapgrowthlimit 256m
@@ -167,6 +162,7 @@ service vendor.mdm_helper /vendor/bin/mdm_helper
 service vendor.mdm_launcher /vendor/bin/sh /vendor/bin/init.mdm.sh
     class main
     oneshot
+
 
 on property:vold.decrypt=trigger_restart_framework
     start cnss_diag

@@ -11,3 +11,6 @@ allow init sysfs_battery_supply:file { setattr };
 
 allow init vendor_data_file:file lock;
 allow init hal_audio_default:binder call;
+
+# Allow init to write to sysfs_battery_supply
+allow init sysfs_battery_supply:file { setattr };
