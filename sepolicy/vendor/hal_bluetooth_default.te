@@ -1,1 +1,5 @@
 set_prop(hal_bluetooth_default, fac_prop)
+
+allow hal_bluetooth_default vendor_data_file:file r_file_perms;
+allow hal_bluetooth_default vfat:dir search;
+allow hal_bluetooth_default vfat:file { read open getattr };

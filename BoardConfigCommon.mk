@@ -9,6 +9,8 @@ BOARD_VENDOR := lenovo
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 DEVICE_PATH_COMMON := device/lenovo/sm8150-common
+BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
+
 
 # Architecture
 TARGET_ARCH := arm64
@@ -36,7 +38,7 @@ BOARD_BOOTIMG_HEADER_VERSION := 1
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0xa90000 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=2048 loop.max_part=7 androidboot.usbcontroller=a600000.dwc3
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image-dtb
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
@@ -165,10 +167,11 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH_COMMON)
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Sepolicy
+TARGET_SEPOLICY_DIR := msmnile
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH_COMMON)/sepolicy/private
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH_COMMON)/sepolicy/public
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH_COMMON)/sepolicy/private
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH_COMMON)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH_COMMON)/sepolicy/vendor
 SELINUX_IGNORE_NEVERALLOWS := true
 
