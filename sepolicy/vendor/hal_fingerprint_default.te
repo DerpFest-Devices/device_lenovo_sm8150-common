@@ -29,7 +29,7 @@ allow hal_fingerprint_default vendor_xdsp_device:chr_file r_file_perms;
 allow hal_fingerprint_default vfat:dir { search };
 
 allow hal_fingerprint_default hal_fingerprint_hwservice:hwservice_manager find;
-
+allow hal_fingerprint_default hal_fingerprint_default:binder { call transfer };
 
 
 

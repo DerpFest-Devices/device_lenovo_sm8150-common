@@ -1,3 +1,4 @@
 allow ueventd self:capability sys_nice;
-allow ueventd vfat:dir { search };
+allow ueventd vfat:dir search;
 allow ueventd vfat:file { read open getattr };
+allow ueventd metadata_file:dir search;
