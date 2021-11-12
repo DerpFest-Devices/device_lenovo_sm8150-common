@@ -656,7 +656,6 @@ vendor/lib/libqmiservices.so
 # Radio
 -system_ext/app/DeviceInfo/DeviceInfo.apk
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
--system_ext/app/datastatusnotification/datastatusnotification.apk
 -system_ext/app/embms/embms.apk
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml
@@ -742,6 +741,9 @@ vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
+
+# Radio - Telephony - from coral - google/coral/coral:12/SPB5.210812.002/7671067:user/release-keys
+-system_ext/app/datastatusnotification/datastatusnotification.apk|f33ce45ec04a67b88e9f4da52378153c77d21e77
 
 # Radio_IMS
 system_ext/etc/permissions/com.qualcomm.qti.imscmservice.xml
