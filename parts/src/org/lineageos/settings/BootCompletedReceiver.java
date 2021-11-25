@@ -23,15 +23,25 @@ import android.content.Intent;
 import android.util.Log;
 
 import org.lineageos.settings.doze.DozeUtils;
+import org.lineageos.settings.utils.FileUtils;
+import android.content.SharedPreferences;
+import androidx.preference.PreferenceManager;
 
 public class BootCompletedReceiver extends BroadcastReceiver {
 
     private static final boolean DEBUG = false;
     private static final String TAG = "LenovoParts";
+    private static final String HBM_ENABLE_KEY = "hbm_mode";
+    private static final String HBM_NODE = "/sys/class/backlight/panel0-hbm/brightness";
 
     @Override
     public void onReceive(final Context context, Intent intent) {
         if (DEBUG) Log.d(TAG, "Received boot completed intent");
         DozeUtils.checkDozeService(context);
+
+        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
+
+        boolean hbmEnabled = sharedPrefs.getBoolean(HBM_ENABLE_KEY, false);
+        FileUtils.writeLine(HBM_NODE, hbmEnabled ? "1" : "0");
     }
 }

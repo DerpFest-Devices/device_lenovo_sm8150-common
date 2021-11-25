@@ -16,7 +16,16 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-        <!-- Smart wake strings-->
+    <!-- Smart wake strings-->
     <string name="smart_wake_gesture_title">Smart Wake</string>
     <string name="smart_wake_gesture_summary">Pulse notifications on slight motion of device and wake screen when picked up</string>
+
+    <!--Display settings fragment -->
+    <string name="display_settings_title">Custom display settings</string>
+    <string name="display_settings_summary">HBM</string>
+
+    <!-- HBM settings -->
+    <string name="hbm_mode_title">High Brightness Mode</string>
+    <string name="hbm_mode_summary">High Brightness Mode allows the display panel brightness to go above the maximum stock value. Which helps in improving visibility in direct sunlight</string>
+    <string name="hbm_enable_summary_not_supported">HBM is not currently supported by the kernel</string>
 </resources>
