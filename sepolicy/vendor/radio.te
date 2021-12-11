@@ -2,3 +2,4 @@ get_prop(radio, vendor_ims_prop)
 
 allow radio vendor_hal_datafactory_hwservice:hwservice_manager find;
 allow radio vendor_hal_iwlan_hwservice:hwservice_manager find;
+allow radio self:socket create_socket_perms;

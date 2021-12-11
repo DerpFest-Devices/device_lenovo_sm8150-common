@@ -1,8 +1,11 @@
 # Allow system_app to read/write files in sysfs_graphics for brightness
 allow system_app sysfs_graphics:dir r_dir_perms;
 allow system_app sysfs_graphics:file rw_file_perms;
+
 allow system_app sysfs_kgsl:file r_file_perms;
 allow system_app sysfs_device_info:file r_file_perms;
 
 allow system_app vendor_bluetooth_prop:file { read open getattr map };
 hal_client_domain(system_app, vendor_hal_fm)
+
+allow system_app sysfs_zram:dir { search };
