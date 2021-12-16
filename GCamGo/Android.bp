@@ -1,0 +1,11 @@
+android_app_import {
+	name: "GCamGo",
+	owner: "google",
+	apk: "system/priv-app/GCamGo/GCamGo.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	overrides: ["Camera2", "Snap"],
+}

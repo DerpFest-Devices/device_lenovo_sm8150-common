@@ -144,10 +144,13 @@ PRODUCT_PACKAGES += \
     libdng_sdk \
     libgui_vendor \
     libqti-perfd-client \
-    libxml2
+    libxml2 \
+    GCamGo
 
 PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libc++.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++.so
+    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libc++.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++.so \
+    $(LOCAL_PATH)/GCamGo/system/etc/permissions/com.google.android.GCamGo.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.google.android.GCamGo.xml \
+    $(LOCAL_PATH)/GCamGo/system/etc/configs/hiddenapi-package-whitelist-GCamGo.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-package-whitelist-GCamGo.xml
 
 # Component overrides
 PRODUCT_COPY_FILES += \
