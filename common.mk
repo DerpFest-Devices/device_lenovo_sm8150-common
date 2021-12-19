@@ -345,9 +345,12 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor
 
-# RenderScript
+# RCS
 PRODUCT_PACKAGES += \
-    android.hardware.renderscript@1.0-impl
+    rcs_service_aidl \
+    rcs_service_aidl.xml \
+    rcs_service_api \
+    rcs_service_api.xml
 
 # RIL
 PRODUCT_PACKAGES += \
