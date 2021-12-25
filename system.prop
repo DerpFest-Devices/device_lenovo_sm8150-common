@@ -89,6 +89,11 @@ persist.rcs.supported=1
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
 
+# Spark-OS
+ro.spark.device.name=Lenovo Z6 Pro
+ro.spark.group.url=https://t.me/SparkOSCommunity
+ro.spark.maintainer.username=@chematelegram
+
 # Subsystem ramdump
 persist.vendor.ssr.enable_ramdumps=0
 persist.vendor.ssr.restart_level=ALL_ENABLE
