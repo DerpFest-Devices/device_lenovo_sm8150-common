@@ -1,5 +1,0 @@
-package vendor.goodix.extend.service@2.0;
-
-interface IGoodixFPExtendService {
-    goodixExtendCommand (int32_t cmd, int32_t param) generates (int32_t debugErrno);
-};
