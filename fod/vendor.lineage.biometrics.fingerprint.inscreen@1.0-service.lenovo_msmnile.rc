@@ -3,9 +3,10 @@ on init
     chmod 0666 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_bl
     chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_hbm
     chmod 0666 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_hbm
-    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/fod_ui
 
-service fps_hal.lenovo_msmnile /system/bin/hw/android.hardware.biometrics.fingerprint@2.3-service.lenovo_msmnile
-    class late_start
+service fingerprint-inscreen-1-0 /vendor/bin/hw/vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.lenovo_msmnile
+    interface vendor.lineage.biometrics.fingerprint.inscreen@1.0::IFingerprintInscreen default
+    class hal
     user system
-    group system input uhid
+    group system
+    shutdown critical

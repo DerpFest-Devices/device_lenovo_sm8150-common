@@ -1,1 +1,0 @@
-allow zygote vendor_file:file { read };

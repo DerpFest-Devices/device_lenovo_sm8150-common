@@ -1,1 +1,0 @@
-allow bootanim vendor_file:file { read open };

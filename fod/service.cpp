@@ -14,36 +14,37 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.lenovo_msmnile"
+#define LOG_TAG "lineage.biometrics.fingerprint.inscreen@1.0-service.lenovo_msmnile"
 
 #include <android-base/logging.h>
 #include <hidl/HidlTransportSupport.h>
-#include "BiometricsFingerprint.h"
+
+#include "FingerprintInscreen.h"
 
 using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
 
-using android::hardware::biometrics::fingerprint::V2_3::IBiometricsFingerprint;
-using android::hardware::biometrics::fingerprint::V2_3::implementation::BiometricsFingerprint;
+using vendor::lineage::biometrics::fingerprint::inscreen::V1_0::IFingerprintInscreen;
+using vendor::lineage::biometrics::fingerprint::inscreen::V1_0::implementation::FingerprintInscreen;
 
 using android::OK;
 using android::status_t;
 
 int main() {
-    android::sp<IBiometricsFingerprint> service = new BiometricsFingerprint();
+    android::sp<IFingerprintInscreen> service = new FingerprintInscreen();
 
     configureRpcThreadpool(1, true);
 
     status_t status = service->registerAsService();
     if (status != OK) {
-        LOG(ERROR) << "Cannot register Biometrics 2.3 HAL service.";
+        LOG(ERROR) << "Cannot register FOD HAL service.";
         return 1;
     }
 
-    LOG(INFO) << "Biometrics 2.3 HAL service ready.";
+    LOG(INFO) << "FOD HAL service ready.";
 
     joinRpcThreadpool();
 
-    LOG(ERROR) << "Biometrics 2.3 HAL service failed to join thread pool.";
+    LOG(ERROR) << "FOD HAL service failed to join thread pool.";
     return 1;
 }
