@@ -40,3 +40,6 @@ get_prop(hal_fingerprint_default, vendor_adsprpc_prop)
 set_prop(hal_fingerprint_default, vendor_fp_prop)
 hal_client_domain(hal_fingerprint_default, vendor_hal_perf)
 add_hwservice(hal_fingerprint_default, hal_fingerprint_hwservice)
+
+allow hal_fingerprint_default default_android_hwservice:hwservice_manager { add find };
+allow hal_fingerprint_default vendor_system_prop:property_service set;
