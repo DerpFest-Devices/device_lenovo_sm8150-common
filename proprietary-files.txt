@@ -274,12 +274,12 @@ vendor/etc/init/dpmQmiMgr.rc|1538743661a5c48c15cd105beaad20f72953885a
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|d9f1aa7f93b928f42499d613d20ccbc60f279097
 vendor/lib64/libdpmqmihal.so|41eb89e66ba065c43a5eb79cd3c72cef0ee167aa
 
-# DRM - from LA.UM.9.1.r1-10600-SMxxx0.0
+# DRM - from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service|d3d6ed383483747f8bec574adcac1c24ef1ac3a4
 vendor/bin/qseecomd|786828a94ba5dea8a37c21d9a089b853aa41f4a5
 vendor/etc/init/qseecomd.rc|0ebfb7c5d1d2459be4fdac951a182dc486f3bda7
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc|0f43244d70d5efc1e4f089b926a9dc4f59e53db1
-vendor/etc/gpfspath_oem_config.xml
+vendor/etc/gpfspath_oem_config.xml|7aeade35b0bbe27530f6aca8c1ed5192a7acf59d
 vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so|8eb72a3667f67b856251cba1ac4581070107e58f
 vendor/lib64/libGPreqcancel.so|b9efbc8623981e1249ad0a0f8964b2b655d2b334
 vendor/lib64/libGPreqcancel_svc.so|75773719eb9b9a2912ae2808215d249a0f8c14b5
@@ -294,17 +294,17 @@ vendor/lib64/libqisl.so|c79719eebc094c2af9561e8df2c158638b111b70
 vendor/lib64/librpmb.so|9ddc3b22dbde8b60aaf531601ac452e945d95a14
 vendor/lib64/libsecureui.so|b5c35232002618c4b5d8e3298871abbc0b8b25d0
 vendor/lib64/libsecureui_svcsock.so|d7588944eeb656ca48713dc4cfabc2c299029514
-vendor/lib64/libspl.so
+vendor/lib64/libspl.so|f9c12bc40b075ef5b933fe0ff6b86ebe72a031db
 vendor/lib64/libssd.so|0a461a98eb314fe6e79bfe08457a88e48c52550a
 vendor/lib64/libtzdrmgenprov.so|703ea58f8e6a853c4a60cc22cf169f8f204df15c
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|ce94ef46eea7c32e8a0d47ce4aa372153cc339fb
 
-# ESE Powermanager
-vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
-vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc
-vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
-vendor/lib64/vendor.qti.esepowermanager@1.0.so
-vendor/lib64/vendor.qti.esepowermanager@1.1.so
+# ESE Powermanager - from LA.UM.9.1.r1-10900-SMxxx0.0
+vendor/bin/hw/vendor.qti.esepowermanager@1.1-service|c6b5cf65cb4096abbf137f0c1f6674dce7d7db71
+vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc|3c024c7135ec3dd8658624509ee61396a74f1ede
+vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so|c3f6b98fb88ce938d6141264e926bad0ed0c577e
+vendor/lib64/vendor.qti.esepowermanager@1.0.so|43257e4e68ea43c34a1acecda7fa524bf1ad53ad
+vendor/lib64/vendor.qti.esepowermanager@1.1.so|85224bd7e8b89f2b0e4370c14457a62cd99781c8
 
 # Fingerprint extensions - from cepheus - cepheus-user-11-RKQ1.200826.002-V12.5.3.0.RFACNXM-release-keys
 vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so|393d8da1466f00bc4479f557ce5d41b879831eee
@@ -313,7 +313,7 @@ vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so|393d8da1466f00bc
 vendor/lib/vendor.qti.hardware.fm@1.0.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
-# Gatekeeper - from LA.UM.9.1.r1-10600-SMxxx0.0
+# Gatekeeper - from LA.UM.9.1.r1-10900-SMxxx0.0
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|2e33e885b92e413440511049025497945d6b8484
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so|6a90a3902fa4effa005fd58d7222fde6260d4fe4
