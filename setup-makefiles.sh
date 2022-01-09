@@ -8,6 +8,9 @@
 
 set -e
 
+DEVICE=sm8150-common
+VENDOR=lenovo
+
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
