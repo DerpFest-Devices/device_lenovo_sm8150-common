@@ -25,4 +25,8 @@
 
     <!-- Show the network traffic monitor on statusbar even if the device has a notch -->
     <bool name="config_forceShowNetworkTrafficOnStatusBar">true</bool>
+    
+    <!-- The battery current divider, some kernel report current value in mA
+    other in µA.Leave 1 if you have mA, put 1000 if you have µA-->
+    <integer name="config_battCurrentDivider" translatable="false">1000</integer>
 </resources>
