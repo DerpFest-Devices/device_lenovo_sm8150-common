@@ -18,18 +18,16 @@
 package org.lineageos.settings.display;
 
 import android.os.Bundle;
+import android.preference.PreferenceActivity;
 
-import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.collapsingtoolbar.R;
-
-public class DisplaySettingsActivity extends CollapsingToolbarBaseActivity {
+public class DisplaySettingsActivity extends PreferenceActivity {
 
     private static final String TAG_HBMMODE = "hbmmode";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getFragmentManager().beginTransaction().replace(R.id.content_frame,
+        getFragmentManager().beginTransaction().replace(android.R.id.content,
                 new DisplaySettingsFragment(), TAG_HBMMODE).commit();
     }
 }
