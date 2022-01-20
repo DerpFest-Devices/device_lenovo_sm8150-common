@@ -165,6 +165,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Sepolicy
 TARGET_SEPOLICY_DIR := msmnile
 include device/qcom/sepolicy_vndr/SEPolicy.mk
+SELINUX_IGNORE_NEVERALLOWS := true
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH_COMMON)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH_COMMON)/sepolicy/public
