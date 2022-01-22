@@ -9,3 +9,5 @@ allow system_app vendor_bluetooth_prop:file { read open getattr map };
 hal_client_domain(system_app, vendor_hal_fm)
 
 allow system_app sysfs_zram:dir { search };
+allow system_app proc_pagetypeinfo:file { read };
+allow system_app sysfs_zram:file { read };
