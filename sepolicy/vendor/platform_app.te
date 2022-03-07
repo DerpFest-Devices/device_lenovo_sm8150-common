@@ -1,1 +1,4 @@
 get_prop(platform_app, vendor_camera_prop)
+
+# Soter
+hal_client_domain(platform_app, vendor_hal_soter);
