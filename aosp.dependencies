@@ -1,0 +1,8 @@
+[
+  {
+    "repository" : "kernel_lenovo_sm8150",
+    "target_path": "kernel/lenovo/sm8150",
+    "remote"     : "pixel-devices",
+    "branch"     : "twelve"
+  }
+]
