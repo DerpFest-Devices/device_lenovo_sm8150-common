@@ -122,6 +122,13 @@ ODM_MANIFEST_FILES := $(DEVICE_PATH_COMMON)/manifest-qva.xml
 # Keystore
 TARGET_PROVIDES_KEYMASTER := true
 
+# LiveDisplay
+ifneq ("$(wildcard hardware/lineage/livedisplay)", "")
+    SOONG_CONFIG_NAMESPACES += livedisplay
+    SOONG_CONFIG_livedisplay += enabled
+    SOONG_CONFIG_livedisplay_enabled := true
+endif
+
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
