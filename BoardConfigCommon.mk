@@ -127,6 +127,8 @@ ifneq ("$(wildcard hardware/lineage/livedisplay)", "")
     SOONG_CONFIG_NAMESPACES += livedisplay
     SOONG_CONFIG_livedisplay += enabled
     SOONG_CONFIG_livedisplay_enabled := true
+
+    BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH_COMMON)/livedisplay/sepolicy/vendor
 endif
 
 # Metadata
