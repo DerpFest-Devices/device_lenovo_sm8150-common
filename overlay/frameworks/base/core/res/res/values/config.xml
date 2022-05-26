@@ -702,4 +702,8 @@
         <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
         <item>"/system/lib64/libsurfaceflinger.so"</item>
     </string-array>
+    
+    <!-- List of comma separated package names for which we the system will not show crash, ANR,
+    etc. dialogs. -->
+    <string name="config_appsNotReportingCrashes">com.google.android.tts</string>
 </resources>
