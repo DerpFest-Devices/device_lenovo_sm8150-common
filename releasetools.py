@@ -37,7 +37,9 @@ def IncrementalOTA_InstallEnd(info):
 
 def AddModemAssertion(info, input_zip):
   android_info = info.input_zip.read("OTA/android-info.txt")
-  m = re.search(r'require\s+version-modem\s*=\s*(.+)', android_info)
+  print('MADONNAAAAAA')
+  print(android_info)
+  m = re.search(r'require\s+version-modem\s*=\s*(.+)', android_info.decode('utf-8'))
   if m:
     timestamp, firmware_version = m.group(1).rstrip().split(',')
     if ((len(timestamp) and '*' not in timestamp) and \
