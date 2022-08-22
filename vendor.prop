@@ -107,6 +107,12 @@ ro.surface_flinger.has_wide_color_display=true
 debug.renderengine.backend=skiaglthreaded
 renderthread.skia.reduceopstasksplitting=true
 
+# (IORapd) App launch prefetching 
+ro.iorapd.enable=false
+iorapd.perfetto.enable=false
+iorapd.readahead.enable=false
+persist.device_config.runtime_native_boot.iorap_readahead_enable=false
+
 # Keystore
 ro.hardware.keystore_desede=true
 
