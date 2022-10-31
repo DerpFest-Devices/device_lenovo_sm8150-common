@@ -60,6 +60,8 @@
     <string-array name="config_cameraAuxPackageAllowList" translatable="false">
         <item>com.android.camera</item>
         <item>org.codeaurora.snapcam</item>
+        <item>org.lineageos.aperture</item>
+        <item>org.lineageos.aperture.dev</item>
         <item>com.zui.camera</item>
     </string-array>
 </resources>
