@@ -296,6 +296,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.lenovo_msmnile
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 # LiveDisplay
 ifneq ("$(wildcard hardware/lineage/livedisplay)", "")
     PRODUCT_PACKAGES += \

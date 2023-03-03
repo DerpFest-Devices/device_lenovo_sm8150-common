@@ -119,6 +119,9 @@ ODM_MANIFEST_FILES := $(DEVICE_PATH_COMMON)/manifest-qva.xml
 # Keystore
 TARGET_PROVIDES_KEYMASTER := true
 
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
+
 # LiveDisplay
 ifneq ("$(wildcard hardware/lineage/livedisplay)", "")
     SOONG_CONFIG_NAMESPACES += livedisplay
