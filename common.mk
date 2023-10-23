@@ -427,9 +427,14 @@ PRODUCT_PACKAGES += \
     ims_ext_common.xml \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
+    qti-telephony-hidl-wrapper-prd \
     qti-telephony-utils \
     qti_telephony_utils.xml \
-    telephony-ext
+    telephony-ext \
+    extphonelib \
+    extphonelib-product \
+    extphonelib.xml \
+    extphonelib_product.xml
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
@@ -444,10 +449,13 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi.service-lazy \
+    android.hardware.wifi.service \
     hostapd \
     libwifi-hal-qcom \
+    libwifi-hal-ctrl \
     libwpa_client \
+    wpa_cli \
+    TetheringConfigOverlay \
     WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
