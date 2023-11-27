@@ -665,7 +665,6 @@ vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
 vendor/etc/init/dataadpl.rc
 vendor/etc/init/dataqti.rc
-vendor/etc/init/init-qcril-data.rc
 vendor/etc/init/ipa_fws.rc
 vendor/etc/init/ipacm-diag.rc
 vendor/etc/init/netmgrd.rc
