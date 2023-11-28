@@ -14,11 +14,13 @@
     <!-- Whether device has screen with higher aspect ratio -->
     <bool name="config_haveHigherAspectRatioScreen">true</bool>
 
-    <!-- The list of package IDs that are not allowed to use aux cameras. -->
-    <string-array name="config_cameraAuxPackageExcludeList" translatable="false">
-        <item>com.adobe.scan.android</item>
-        <item>org.telegram.messenger</item>
-        <item>org.thunderdog.challegram</item>
-        <item>us.zoom.videomeetings</item>
+    <!-- The list of package IDs that are allowed to use aux cameras.
+         NOTE: If this list is empty then all apps will be able to use aux cameras. -->
+    <string-array name="config_cameraAuxPackageAllowList" translatable="false">
+        <item>com.android.camera</item>
+        <item>org.codeaurora.snapcam</item>
+        <item>org.derpfest.flash</item>
+        <item>org.derpfest.flash.dev</item>
+        <item>com.zui.camera</item>
     </string-array>
 </resources>
