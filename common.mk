@@ -136,7 +136,8 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
     libdng_sdk \
     libgui_vendor \
-    libxml2
+    libxml2 \
+    libpng.vendor:32
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-sp/libc++.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++.so
@@ -242,6 +243,7 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0.vendor \
     android.hidl.manager@1.0 \
     android.hidl.manager@1.0.vendor \
+    libhidlmemory.vendor:64 \
     libhwbinder \
     libhwbinder.vendor
 
@@ -377,7 +379,10 @@ PRODUCT_PACKAGES += \
     libril \
     librilutils \
     librmnetctl \
-    libxml2
+    libxml2 \
+    libion.vendor \
+    libnetutils.vendor \
+    libsqlite.vendor:64
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
@@ -388,7 +393,8 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
-    libsensorndkbridge
+    libsensorndkbridge \
+    libpower.vendor
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
