@@ -113,6 +113,8 @@ TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH_COMMON):libudfps_extension.le
 TARGET_USES_FOD_ZPOS := true
 
 # HIDL
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH_COMMON)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH_COMMON)/compatibility_matrix.xml
 ODM_MANIFEST_FILES := $(DEVICE_PATH_COMMON)/manifest-qva.xml
