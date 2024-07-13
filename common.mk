@@ -137,6 +137,7 @@ PRODUCT_PACKAGES += \
     libdng_sdk \
     libgui_vendor \
     libxml2 \
+    libutilscallstack.vendor:64 \
     libpng.vendor:32
 
 PRODUCT_COPY_FILES += \
@@ -355,7 +356,10 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 PRODUCT_PACKAGES += \
+    libcurl.vendor:64 \
+    libjsoncpp.vendor \
     libjson \
+    libsqlite.vendor:64 \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor
 
@@ -394,6 +398,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
     libsensorndkbridge \
+    libdumpstateutil.vendor:64 \
     libpower.vendor
 
 # Soong namespaces
@@ -433,6 +438,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
+    libprocessgroup.vendor:32 \
     libwifi-hal-qcom \
     libwpa_client \
     WifiOverlay \
