@@ -223,6 +223,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config
 
+# Kernel
+PRODUCT_ENABLE_UFFD_GC := true
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.lights-service.lenovo_msmnile
