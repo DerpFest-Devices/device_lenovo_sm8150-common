@@ -5886,12 +5886,6 @@ case "$target" in
         ;;
 esac
 
-case "$target" in
-    "qsd8650a_st1x")
-        mount -t debugfs none /sys/kernel/debug
-    ;;
-esac
-
 chown -h system /sys/devices/system/cpu/cpufreq/ondemand/sampling_rate
 chown -h system /sys/devices/system/cpu/cpufreq/ondemand/sampling_down_factor
 chown -h system /sys/devices/system/cpu/cpufreq/ondemand/io_is_busy

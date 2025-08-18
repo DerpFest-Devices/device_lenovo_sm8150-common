@@ -2,7 +2,6 @@ get_prop(vendor_init, persist_debug_prop)
 
 set_prop(vendor_init, vendor_power_prop)
 
-allow vendor_init debugfs_sched_features:file write;
 allow vendor_init device:file create_file_perms;
 allow vendor_init proc_dirty:file write;
 allow vendor_init proc_watermark_scale_factor:file w_file_perms;
