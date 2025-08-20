@@ -9,8 +9,8 @@
 /(vendor|system/vendor)/bin/hw/vendor\.zui\.hardware\.ifaa@1\.0-service                                                 u:object_r:hal_ifaa_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.lights-service\.lenovo_msmnile                                        u:object_r:hal_light_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.lenovo_msmnile                  u:object_r:hal_fingerprint_default_exec:s0
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay@2\.1-service\.lenovo_msmnile                                u:object_r:hal_livedisplay_lenovo_msmnile_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.lenovo_heart                                        u:object_r:hal_lineage_touch_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.livedisplay-service\.lenovo_msmnile                                     u:object_r:hal_lineage_livedisplay_qti_exec:s0
 
 # Sys files
 /sys/class/touch/tp_dev(/.*)?                                                                                           u:object_r:sysfs_tp:s0

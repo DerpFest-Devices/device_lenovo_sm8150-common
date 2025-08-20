@@ -1,6 +1,5 @@
 #
-# Copyright (C) 2019-2025 The LineageOS Project
-#
+# SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -239,8 +238,8 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service-sdm \
-    vendor.lineage.livedisplay@2.1-service.lenovo_msmnile
+    vendor.lineage.livedisplay-service.sdm \
+    vendor.lineage.livedisplay-service.lenovo_msmnile
 
 # Media
 PRODUCT_PACKAGES += \

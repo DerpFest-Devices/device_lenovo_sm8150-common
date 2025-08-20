@@ -1,66 +1,56 @@
 /*
- * Copyright (C) 2019-2021 The LineageOS Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
+ * SPDX-FileCopyrightText: The LineageOS Project
+ * SPDX-License-Identifier: Apache-2.0
  */
 
-#define LOG_TAG "vendor.lineage.livedisplay@2.1-service.lenovo_msmnile"
+#define LOG_TAG "vendor.lineage.livedisplay-service.lenovo_msmnile"
 
 #include <android-base/logging.h>
+#include <android/binder_manager.h>
+#include <android/binder_process.h>
 #include <binder/ProcessState.h>
-#include <hidl/HidlTransportSupport.h>
-#include <vendor/lineage/livedisplay/2.1/IPictureAdjustment.h>
+#include <livedisplay/sdm/PictureAdjustment.h>
 
 #include "AntiFlicker.h"
 #include "SunlightEnhancement.h"
-#include "livedisplay/sdm/SDMController.h"
 
-using android::OK;
-using android::sp;
-using android::status_t;
-
-using ::vendor::lineage::livedisplay::V2_0::sdm::SDMController;
-using ::vendor::lineage::livedisplay::V2_1::IAntiFlicker;
-using ::vendor::lineage::livedisplay::V2_1::ISunlightEnhancement;
-using ::vendor::lineage::livedisplay::V2_1::implementation::AntiFlicker;
-using ::vendor::lineage::livedisplay::V2_1::implementation::SunlightEnhancement;
+using ::aidl::vendor::lineage::livedisplay::AntiFlicker;
+using ::aidl::vendor::lineage::livedisplay::SunlightEnhancement;
+using ::aidl::vendor::lineage::livedisplay::sdm::PictureAdjustment;
+using ::aidl::vendor::lineage::livedisplay::sdm::SDMController;
 
 int main() {
-    status_t status = OK;
+    android::ProcessState::self()->setThreadPoolMaxThreadCount(1);
+    android::ProcessState::self()->startThreadPool();
+
     std::shared_ptr<SDMController> controller = std::make_shared<SDMController>();
-    sp<AntiFlicker> af = new AntiFlicker();
-    sp<SunlightEnhancement> se = new SunlightEnhancement();
-    android::hardware::configureRpcThreadpool(1, true /*callerWillJoin*/);
-
-    // AntiFlicker service
-    status = af->registerAsService();
-    if (status != OK) {
-        LOG(ERROR) << "Could not register service for LiveDisplay HAL AntiFlicker Iface ("
-                   << status << ")";
+    std::shared_ptr<PictureAdjustment> pictureAdjustment =
+            ndk::SharedRefBase::make<PictureAdjustment>(controller);
+    std::string instance = std::string() + PictureAdjustment::descriptor + "/default";
+    if (AServiceManager_addService(pictureAdjustment->asBinder().get(), instance.c_str()) !=
+        STATUS_OK) {
+        LOG(ERROR) << "Cannot register picture adjustment HAL service.";
         return 1;
     }
 
-    // SunlightEnhancement service
-    status = se->registerAsService();
-    if (status != OK) {
-        LOG(ERROR) << "Could not register service for LiveDisplay HAL SunlightEnhancement Iface ("
-                   << status << ")";
+    std::shared_ptr<AntiFlicker> antiFlicker = ndk::SharedRefBase::make<AntiFlicker>();
+    instance = std::string() + AntiFlicker::descriptor + "/default";
+    if (AServiceManager_addService(antiFlicker->asBinder().get(), instance.c_str()) != STATUS_OK) {
+        LOG(ERROR) << "Cannot register anti flicker HAL service.";
         return 1;
     }
 
-    LOG(INFO) << "LiveDisplay HAL service ready.";
+    std::shared_ptr<SunlightEnhancement> sunlightEnhancement =
+            ndk::SharedRefBase::make<SunlightEnhancement>();
+    instance = std::string() + SunlightEnhancement::descriptor + "/default";
+    if (AServiceManager_addService(sunlightEnhancement->asBinder().get(), instance.c_str()) !=
+        STATUS_OK) {
+        LOG(ERROR) << "Cannot register sunlight enhancement HAL service.";
+        return 1;
+    }
+    LOG(INFO) << "LiveDisplay HAL service is ready.";
 
-    android::hardware::joinRpcThreadpool();
+    ABinderProcess_joinThreadPool();
 
     LOG(ERROR) << "LiveDisplay HAL service failed to join thread pool.";
     return 1;
