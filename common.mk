@@ -239,8 +239,8 @@ PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay-service.sdm \
     vendor.lineage.livedisplay-service.sysfs
 
-$(call soong_config_set,livedisplay_sysfs,enable_af,true)
-$(call soong_config_set,livedisplay_sysfs,enable_se,true)
+$(call soong_config_set_bool,livedisplay_sysfs,enable_af,true)
+$(call soong_config_set_bool,livedisplay_sysfs,enable_se,true)
 $(call soong_config_set,livedisplay_sysfs,se_path,/sys/class/backlight/panel0-hbm/brightness)
 
 # Media
