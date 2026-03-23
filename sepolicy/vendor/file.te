@@ -1,3 +1,5 @@
+type gx_fpd_data_file, file_type, core_data_file_type, data_file_type;
+
 type sysfs_tp, fs_type, sysfs_type;
 type sysfs_vl53l1, sysfs_type, fs_type;
 type system_camera_file, file_type;

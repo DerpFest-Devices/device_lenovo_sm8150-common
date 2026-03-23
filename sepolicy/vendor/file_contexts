@@ -1,6 +1,9 @@
 # Binaries
 /(vendor|system/vendor)/bin/vl53l1_daemon_main                                                                          u:object_r:vl53l1_daemon_main_exec:s0
 
+# Data
+/data/gf_data(/.*)?                                 u:object_r:gx_fpd_data_file:s0
+
 # Devices
 /dev/goodix_fp                                                                                                          u:object_r:gx_fpd_device:s0
 /dev/stmvl53l1_ranging                                                                                                  u:object_r:vl53l1_device:s0
